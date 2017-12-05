@@ -6,9 +6,9 @@
 
 **Notes:**
 * I originally created these pages on a Mac running OSX El Capitan (version 10.11.6)
-   I checked the pages using;
-      * Chrome (version 62.0.3202.94)
-      * Firefox (version 57.0)
-      * Safari (version 11.0.1)
+    I checked the pages using;
+         * Chrome (version 62.0.3202.94)
+         * Firefox (version 57.0)
+         * Safari (version 11.0.1)
       
    I don't have a Windoze box handy but I may put these pages on a flash drive so I can see how they look with Exploder.  I don't anticipate any probs.  
