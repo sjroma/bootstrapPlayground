@@ -1,0 +1,11 @@
+.active {
+	background-color: lightgrey;
+}
+
+.active-page {
+	background-color: lightgrey;
+}
+
+.table-condensed {
+	font-size: 11px;
+}
