@@ -6,7 +6,6 @@
 
 **Notes:**
 * I originally created these pages on a Mac running OSX El Capitan (version 10.11.6)
-<<<<<<< HEAD
     * I checked the pages on the following browsers;
         * Chrome (version 62.0.3202.94)
         * Firefox (version 57.0)
