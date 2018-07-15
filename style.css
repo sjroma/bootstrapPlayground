@@ -9,3 +9,16 @@
 .table-condensed {
 	font-size: 11px;
 }
+
+img {
+  float: left;
+  height: 200px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+/*
+p {
+  display: inline;
+}
+*/
