@@ -1,0 +1,240 @@
+<!-- from bootstrapcdn.com -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hello world!</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <style>
+    .table {
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      vertical-align: top;
+      width: auto;
+    }
+
+    h4,
+    h5,
+    p {
+      margin-left: 10px;
+    }
+
+    hr {
+      border: 1px solid lightgreen;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="well well-lg clearfix">
+
+      <h1 class="text-primary text-center">Hello, world!</h1>
+      <h4>Paragraph elements and inline text</h4>
+      <h5>Global defaults applied to the <code>body</code> and all paragraph <code>p</code> elements</h5>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Bootstraps global defaults</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Font size</td>
+            <td>14px</td>
+          </tr>
+          <tr>
+            <td>Line height</td>
+            <td>1.428</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr />
+    <div class="well well-lg clearfix">
+      <center>
+        <h2>Bootstraps inline text elements</h2>
+      </center>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Purpose</th>
+            <th>Tag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Underline</td>
+            <td>&lt;u&gt;</td>
+          </tr>
+          <tr>
+            <td>Strikethrough</td>
+            <td>&lt;s&gt;</td>
+          </tr>
+          <tr>
+            <td>Highlight</td>
+            <td>&lt;mark&gt;</td>
+          </tr>
+          <tr>
+            <td>Emphasize or Italicize</td>
+            <td>&lt;em&gt;</td>
+          </tr>
+          <tr>
+            <td>Bold</td>
+            <td>&lt;strong&gt;</td>
+          </tr>
+          <tr>
+            <td>Subscript</td>
+            <td>&lt;sub&gt;</td>
+          </tr>
+          <tr>
+            <td>Superscript</td>
+            <td>&lt;sup&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><u>This text will be underlined</u></p>
+      <p><s>This text will be striken through</s></p>
+      <p><mark>This text will be highlighted</mark></p>
+      <p><em>This text will be italicized</em></p>
+      <p><strong>This text will be bold</strong></p>
+      <p>This is <sub>subscript</sub> and this is <sup>superscript</sup>
+    </div>
+
+    <hr>
+    <div class="well well-lg clearfix">
+      <center>
+        <h2>Bootstrap text alignment classes</h2>
+      </center>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text-left</td>
+            <td>Left align</td>
+          </tr>
+          <tr>
+            <td>text-center</td>
+            <td>Center align</td>
+          </tr>
+          <tr>
+            <td>text-right</td>
+            <td>Right align</td>
+          </tr>
+          <tr>
+            <td>text-justify</td>
+            <td>Justify</td>
+          </tr>
+          <tr>
+            <td>text-nowrap</td>
+            <td>No wrap</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="text-left">Left aligned text.</p>
+      <p class="text-center">Center aligned text.</p>
+      <p class="text-right">Right aligned text.</p>
+      <p class="text-justify">
+        The text in this paragraph will be justified. Bootstrap is free, open-source and is the most popular HTML, CSS and JavaScript framework.
+      </p>
+      <p class="text-nowrap">
+        This text will not wrap and you will get a horizontal scrollbar if there is no space on the screen to view. Resize the browser to see this in action.
+      </p>
+    </div>
+
+    <hr>
+    <div class="well well-lg clearfix">
+      <center>
+        <h2>Bootstrap transformation classes</h2>
+      </center>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text-lowercase</td>
+            <td>Convert to lowercase</td>
+          </tr>
+          <tr>
+            <td>text-uppercase</td>
+            <td>Convert to uppercase</td>
+          </tr>
+          <tr>
+            <td>text-capitalize</td>
+            <td>Capitalize first letter of every word</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="text-lowercase">
+        All The Letters Will Be In Lowercase
+      </p>
+      <p class="text-uppercase">
+        All The Letters Will Be In Uppercase
+      </p>
+      <p class="text-capitalize">
+        First letter of ever word will be capitalized
+      </p>
+    </div>
+
+    <hr>
+    <div class="well well-lg clearfix">
+      <center>
+        <h2>Lead paragraph</h2>
+        To make a paragraph stand out from the other paragraph elements use the <code>.lead</code> class
+      </center>
+
+      <p class="lead">
+        What is Bootstrap
+      </p>
+      <p>
+        Bootstrap is a free, open-source and is the most popular HTML, CSS and Javascript framework.
+      </p>
+    </div>
+
+    <hr>
+    <div class="well well-lg clearfix">
+      <center>
+        <h2>Abbreviations</h2>
+        Abbreviations with a title attribute displays a dotted underline. When the mouse is over the abbreviation, the pointer becomes a help cursor and the title attribute value is displayed as a tooltip.
+      </center>
+
+      <p><abbr title="British Broadcasting Corporation">BBC</abbr></p>
+      <p><abbr title="International Business Machines">IBM</abbr></p>
+      <h4>For a slightly smaller font-size apply the <code>.initialism</code>class</h4>
+      <p><abbr title="American Broadcasting Company" class="initialism">ABC</abbr></p>
+      <p><abbr title="Columbia Broadcasting System" class="initialism">CBS</abbr></p>
+      <p><abbr title="National Broadcasting Company" class="initialism">NBC</abbr></p>
+    </div>
+    <button type="button" class="btn btn-default"><a href="bs337index.html">Back</a></button>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
