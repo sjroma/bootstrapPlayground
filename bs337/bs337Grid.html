@@ -2,269 +2,276 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Bootstrap Grids</title>
+  <title>Bootstrap Grids</title>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+    <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-	<style>
-		.col-sm {
-			background-color: lightgreen;
-		}
-		
-		.col-sm-3 {
-			background-color: lightblue;
-		}
-		
-		.col-sm-4 {
-			background-color: lightcoral;
-		}
-		
-		.col-sm-6 {
-			background-color: lightcyan;
-		}
-		
-		.col-sm-8 {
-			background-color: lightgoldenrodyellow;
-		}
-		
-		.example1 {
-			background-color: lightblue;
-		}
-		
-		.example2 {
-			background-color: lightcyan;
-		}
+  <style>
+    .col-sm {
+      background-color: lightgreen;
+    }
 
-	</style>
+    .col-sm-3 {
+      background-color: lightblue;
+    }
+
+    .col-sm-4 {
+      background-color: lightcoral;
+    }
+
+    .col-sm-6 {
+      background-color: lightcyan;
+    }
+
+    .col-sm-8 {
+      background-color: lightgoldenrodyellow;
+    }
+
+    .example1 {
+      background-color: lightblue;
+    }
+
+    .example2 {
+      background-color: lightcyan;
+    }
+
+  </style>
 </head>
 
 <body>
-	<div class="container text-center">
-		<!-- <div class="jumbotron"> -->
-		<h1 class="text-primary text-center">Bootstrap Grid Examples</h1>
-		<h3 class="text-primary text-center">3.3.7</h3>
+  <div class="container">
+    <!-- <div class="jumbotron"> -->
+    <h1 class="text-primary text-center">Bootstrap Grid Examples</h1>
+    <h4 class="text-primary text-center">Bootstrap v3.3.7</h4>
 
-		<hr>
-		<p>This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page with the parent <code>.container</code>.</p>
-		<div class="container text-center">
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="col-sm-4">
-						One of three columns
-					</div>
-					<div class="col-sm-4">
-						Two of three columns
-					</div>
-					<div class="col-sm-4">
-						Three of three columns
-					</div>
-				</div>
-			</div>
-		</div>
+    <hr>
+    <p class="text-center">This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page within the parent <code>.container</code>.</p>
+    <div class="container text-center">
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="col-sm-4">
+            One of three columns
+          </div>
+          <div class="col-sm-4">
+            Two of three columns
+          </div>
+          <div class="col-sm-4">
+            Three of three columns
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<hr>
-		<p><strong>Three unequal columns</strong></p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<div class="col-sm-3">.col-sm-3</div>
-				<div class="col-sm-6">.col-sm-6</div>
-				<div class="col-sm-3">.col-sm-3</div>
-			</div>
-		</div>
+    <hr>
+    <p class="text-center"><strong>Three unequal columns</strong></p>
+    <div class="row">
+      <div class="well well-lg clearfix">
+        <div class="col-sm-3">.col-sm-3</div>
+        <div class="col-sm-6">.col-sm-6</div>
+        <div class="col-sm-3">.col-sm-3</div>
+      </div>
+    </div>
 
-		<hr>
-		<p><strong>Two unequal columns</strong></p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<div class="col-sm-4">.col-sm-4</div>
-				<div class="col-sm-8">.col-sm-8</div>
-			</div>
-		</div>
+    <hr>
+    <p class="text-center"><strong>Two unequal columns</strong></p>
+    <div class="row">
+      <div class="well well-lg clearfix">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-8">.col-sm-8</div>
+      </div>
+    </div>
 
-		<hr>
-		<p><strong>Two columns with two nested columns</strong></p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<div class="col-sm-8">
-					.col-sm-8
-					<div class="row">
-						<div class="col-sm-6">.col-sm-6</div>
-						<div class="col-sm-6">.col-sm-6</div>
-					</div>
-				</div>
-				<div class="col-sm-4">.col-sm-4</div>
-			</div>
-		</div>
+    <hr>
+    <p class="text-center"><strong>Two columns with two nested columns</strong></p>
+    <div class="row">
+      <div class="well well-lg clearfix">
+        <div class="col-sm-8">
+          .col-sm-8
+          <div class="row">
+            <div class="col-sm-6">.col-sm-6</div>
+            <div class="col-sm-6">.col-sm-6</div>
+          </div>
+        </div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </div>
 
 
-		<hr>
-		<h2>Push and Pull - Change Column Ordering</h2>
-		<p>Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes:</p>
-		<div class="container text-center">
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="col-xs-4 col-xs-push-8">
-						<div class="alert alert-warning">
-							1
-						</div>
-					</div>
-					<div class="col-xs-8 col-xs-pull-4">
-						<div class="alert alert-info">
-							2
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <hr>
+    <h3 class="text-center ">Push and Pull - Change Column Ordering</h3>
+    <p class="text-center">Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes:</p>
+    <div class="container text-center">
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="col-xs-4 col-xs-push-8">
+            <div class="alert alert-warning">
+              1
+            </div>
+          </div>
+          <div class="col-xs-8 col-xs-pull-4">
+            <div class="alert alert-info">
+              2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<br>
-		<div class="container text-center">
-			<p><strong>2 is pushed above 1 and 3 on small screens</strong></p>
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="col-xs-12 col-md-4 col-md-push-4">
-						<div class="alert alert-warning">
-							<b>2</b>
-						</div>
-					</div>
+    <br>
+    <div class="container text-center">
+      <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong></p>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="col-xs-12 col-md-4 col-md-push-4">
+            <div class="alert alert-warning">
+              <b>2</b>
+            </div>
+          </div>
 
-					<div class="col-xs-6 col-md-4 col-md-pull-4">
-						<div class="alert alert-info">
-							<b>1</b>
-						</div>
-					</div>
+          <div class="col-xs-6 col-md-4 col-md-pull-4">
+            <div class="alert alert-info">
+              <b>1</b>
+            </div>
+          </div>
 
-					<div class="col-xs-6 col-md-4">
-						<div class="alert alert-danger">
-							<b>3</b>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div class="col-xs-6 col-md-4">
+            <div class="alert alert-danger">
+              <b>3</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<p><strong>2 is pushed below 1 and 3 on small screens</strong></p>
-		<div class="row">
-			<div class="well well-lg clearfix">
+    <p class="text-center"><strong>2 is pushed below 1 and 3 on small screens</strong></p>
+    <div class="row">
+      <div class="well well-lg clearfix">
 
-				<div class="col-xs-6 col-md-4">
-					<div class="alert alert-info">
-						<b>1</b>
-					</div>
-				</div>
+        <div class="col-xs-6 col-md-4">
+          <div class="alert alert-info">
+            <b>1</b>
+          </div>
+        </div>
 
-				<div class="col-xs-6 col-md-4 col-md-push-4">
-					<div class="alert alert-danger">
-						<b>3</b>
-					</div>
-				</div>
+        <div class="col-xs-6 col-md-4 col-md-push-4">
+          <div class="alert alert-danger">
+            <b>3</b>
+          </div>
+        </div>
 
-				<div class="col-xs-12 col-md-4 col-md-pull-4">
-					<div class="alert alert-warning">
-						<b>2</b>
-					</div>
-				</div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4">
+          <div class="alert alert-warning">
+            <b>2</b>
+          </div>
+        </div>
 
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<p><strong>1 moves to the right as a sidebar on large screens</strong></p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<div class="col-sm-4 col-md-3 col-md-push-9">
-					<b>1</b>
-				</div>
-				<div class="col-sm-8 col-md-9 col-md-pull-3">
-					<b>2</b>
-				</div>
-			</div>
-		</div>
+    <p class="text-center"><strong>1 moves to the right as a sidebar on large screens</strong></p>
+    <div class="row">
+      <div class="well well-lg clearfix">
+        <div class="col-sm-4 col-md-3 col-md-push-9">
+          <b>1</b>
+        </div>
+        <div class="col-sm-8 col-md-9 col-md-pull-3">
+          <b>2</b>
+        </div>
+      </div>
+    </div>
 
-		<hr>
-		<div class="container">
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="bs-example">
-						<p class="hidden-xs">This paragraph is hidden only on <strong>Extra Small Devices</strong> that has screen width less than <code>768px</code>.</p>
-						<p class="hidden-sm">This paragraph is hidden only on <strong>Small Devices</strong> that has screen width greater than equal to <code>768px</code> but less than <code>992px</code>.</p>
-						<p class="hidden-md">This paragraph is hidden only on <strong>Medium Devices</strong> that has screen width greater than or equal to <code>992px</code> but less than <code>1200px</code>.</p>
-						<p class="hidden-lg">This paragraph is hidden only on <strong>Large Devices</strong> that has screen width greater than or equal to <code>1200px</code>.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="bs-example">
+            <p class="hidden-xs">This paragraph is hidden only on <strong>Extra Small Devices</strong> that have a screen width less than <strong>768px</strong>.</p>
+            <p class="hidden-sm">This paragraph is hidden only on <strong>Small Devices</strong> that have a screen width greater than or equal to <strong>768px</strong> but less than <strong>992px</strong>.</p>
+            <p class="hidden-md">This paragraph is hidden only on <strong>Medium Devices</strong> that have a screen width greater than or equal to <strong>992px</strong> but less than <strong>1200px</strong>.</p>
+            <p class="hidden-lg">This paragraph is hidden only on <strong>Large Devices</strong> that have a screen width greater than or equal to <strong>1200px</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<hr>
-		<div class="container text-center">
-			<p><strong>12 column grid</strong></p>
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="example1 col-md-6">Content .col-md-6</div>
-					<div class="example2 col-md-6">Content .col-md-6</div>
-				</div>
-			</div>
+    <hr>
+    <div class="container text-center">
+      <p><strong>12 column grid</strong></p>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="example1 col-md-6">Content .col-md-6</div>
+          <div class="example2 col-md-6">Content .col-md-6</div>
+        </div>
+      </div>
 
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="example1 col-md-4">Content .col-md-4</div>
-					<div class="example2 col-md-4">Content .col-md-4</div>
-					<div class="example1 col-md-4">Content .col-md-4</div>
-				</div>
-			</div>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="example1 col-md-4">Content .col-md-4</div>
+          <div class="example2 col-md-4">Content .col-md-4</div>
+          <div class="example1 col-md-4">Content .col-md-4</div>
+        </div>
+      </div>
 
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="example2 col-md-3">Content .col-md-3</div>
-					<div class="example1 col-md-3">Content .col-md-3</div>
-					<div class="example2 col-md-3">Content .col-md-3</div>
-					<div class="example1 col-md-3">Content .col-md-3</div>
-				</div>
-			</div>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="example2 col-md-3">Content .col-md-3</div>
+          <div class="example1 col-md-3">Content .col-md-3</div>
+          <div class="example2 col-md-3">Content .col-md-3</div>
+          <div class="example1 col-md-3">Content .col-md-3</div>
+        </div>
+      </div>
 
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="example2 col-md-2">.col-md-2</div>
-					<div class="example1 col-md-2">.col-md-2</div>
-					<div class="example2 col-md-2">.col-md-2</div>
-					<div class="example1 col-md-2">.col-md-2</div>
-					<div class="example2 col-md-2">.col-md-2</div>
-					<div class="example1 col-md-2">.col-md-2</div>
-				</div>
-			</div>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="example2 col-md-2">.col-md-2</div>
+          <div class="example1 col-md-2">.col-md-2</div>
+          <div class="example2 col-md-2">.col-md-2</div>
+          <div class="example1 col-md-2">.col-md-2</div>
+          <div class="example2 col-md-2">.col-md-2</div>
+          <div class="example1 col-md-2">.col-md-2</div>
+        </div>
+      </div>
 
-			<div class="row">
-				<div class="well well-lg clearfix">
-					<div class="example2 col-md-1">Content</div>
-					<div class="example1 col-md-1">Content</div>
-					<div class="example2 col-md-1">Content</div>
-					<div class="example1 col-md-1">Content</div>
-					<div class="example2 col-md-1">Content</div>
-					<div class="example1 col-md-1">Content</div>
-					<div class="example2 col-md-1">Content</div>
-					<div class="example1 col-md-1">Content</div>
-					<div class="example2 col-md-1">Content</div>
-					<div class="example1 col-md-1">Content</div>
-					<div class="example2 col-md-1">Content</div>
-					<div class="example1 col-md-1">Content</div>
-				</div>
-			</div>
-		</div>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="example2 col-md-1">Content</div>
+          <div class="example1 col-md-1">Content</div>
+          <div class="example2 col-md-1">Content</div>
+          <div class="example1 col-md-1">Content</div>
+          <div class="example2 col-md-1">Content</div>
+          <div class="example1 col-md-1">Content</div>
+          <div class="example2 col-md-1">Content</div>
+          <div class="example1 col-md-1">Content</div>
+          <div class="example2 col-md-1">Content</div>
+          <div class="example1 col-md-1">Content</div>
+          <div class="example2 col-md-1">Content</div>
+          <div class="example1 col-md-1">Content</div>
+        </div>
+      </div>
+    </div>
 
-		<p><br></p>
-    <button type="button" class="btn btn-default"><a href="bs337index.html">Back</a></button>
+    <p><br></p>
+    <a class="btn btn-primary" href="bs337index.html" role="button">
+      <i class="fa fa-arrow-left"></i> Back</a>
+    <p></p>
+    
+    </div>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	</div>
+  
 </body>
 
 </html>

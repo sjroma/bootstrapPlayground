@@ -2,136 +2,141 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Bootstrap Tabs and Pills</title>
+  <title>Bootstrap Tabs and Pills</title>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+    <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-	<style>
-		h3 {
-			color: cornflowerblue;
-		}
+  <style>
+    h3 {
+      color: cornflowerblue;
+    }
 
-	</style>
+  </style>
 </head>
 
 <body>
-	<div class="container">
-		<h1 class="text-primary text-center">Bootstrap Tabs and Pills</h1>
-		<h3 class="text-primary text-center">3.3.7</h3>
+  <div class="container">
+    <h1 class="text-primary text-center">Bootstrap Tabs and Pills</h1>
+    <h4 class="text-primary text-center">Bootstrap 3.3.7</h4>
 
-		<hr>
-		<h3 class="text-center">Tabs</h3>
-		<p>To achieve bootstrap tabs, first you need an element that has the <code>.nav</code> class assigned to it. Then you simply add an extra class named <code>.nav-tabs</code>.</p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<ul class="nav nav-tabs">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-				</ul>
-			</div>
-		</div>
+    <hr>
+    <h3 class="text-center">Bootstrap Tabs</h3>
+    <p class="text-center">To achieve Bootstrap Tabs, first you need an element that has the <code>.nav</code> class assigned to it. Then you simply add an extra class named <code>.nav-tabs</code>. For example; <code>&lt;ul class="nav nav-tabs"&gt;&lt;/ul&gt;</code></p>
+    <div class="row">
+      <div class="well well-lg clearfix" style="background-color: lightcyan;">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+      </div>
+    </div>
 
-		<h3 class="text-center">Pills</h3>
-		<p>Bootstrap Pills is achieved the same way as Bootstrap Tabs except instead of <code>.nav-tabs</code>, use <code>.nav-pills</code>.</p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<ul class="nav nav-pills">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-				</ul>
-			</div>
-		</div>
+    <h3 class="text-center">Bootstrap Pills</h3>
+    <p class="text-center">Bootstrap Pills is achieved the same way as Bootstrap Tabs except instead of <code>.nav-tabs</code>, use <code>.nav-pills</code>. For example; <code>&lt;ul class="nav nav-pills"&gt;&lt;/ul&gt;</code></p>
+    <div class="row">
+      <div class="well well-lg clearfix" style="background-color: lightcyan;">
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+      </div>
+    </div>
 
-		<h3 class="text-center">Pills stacked</h3>
-		<p>Bootstrap Pills are also vertically stackable by using <code>.nav-stacked</code> in conjunction with <code>.nav-pills</code>.</p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<ul class="nav nav-pills nav-stacked">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-				</ul>
-			</div>
-		</div>
+    <h3 class="text-center">Bootstrap Pills stacked</h3>
+    <p class="text-center">Bootstrap Pills are also vertically stackable by using <code>.nav-stacked</code> in conjunction with <code>.nav-pills</code>. For example; <code>&lt;ul class="nav nav-pills nav-stacked"&gt;&lt;/ul&gt;</code></p>
+    <div class="row">
+      <div class="well well-lg clearfix" style="background-color: lightcyan;">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+      </div>
+    </div>
 
-		<h3 class="text-center">Tabs/Pills Justified</h3>
-		<p>Both Bootstrap Tabs and Pills can have equal width of their parent at screens wider than 768px by using <code>.nav-justified</code> class. On smaller screens, the nav links are stacked.</p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<ul class="nav nav-tabs nav-justified">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<ul class="nav nav-pills nav-justified">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-				</ul>
-			</div>
-		</div>
+    <h3 class="text-center">Bootstrap Tabs/Pills Justified</h3>
+    <p class="text-center">Both Bootstrap Tabs and Pills can have equal width of their parent at screens wider than 768px by using the <code>.nav-justified</code> class. On smaller screens, the nav links are stacked. For example; <code>&lt;ul class="nav nav-tabs nav-justified"&gt;&lt;/ul&gt;</code></p>
+    <div class="row">
+      <div class="well well-lg clearfix">
+        <ul class="nav nav-tabs nav-justified" style="background-color: lightcyan;">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="well well-lg clearfix">
+        <ul class="nav nav-pills nav-justified" style="background-color: lightcyan;">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+      </div>
+    </div>
 
-		<hr>
-		<h3 class="text-center">Tabs with dropdowns</h3>
-		<p>Add dropdown menus to nav tabs</p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<ul class="nav nav-tabs">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-					<li role="presentation" class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Item 1</a></li>
-							<li><a href="#">Item 2</a></li>
-							<li><a href="#">Item 3</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
+    <hr>
+    <h3 class="text-center">Bootstrap Tabs with dropdowns</h3>
+    <p class="text-center">Add dropdown menus to nav tabs</p>
+    <div class="row">
+      <div class="well well-lg clearfix" style="background-color: lightcyan;">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-		<hr>
-		<h3 class="text-center">Pills with dropdowns</h3>
-		<p>Add dropdown menus to nav pills</p>
-		<div class="row">
-			<div class="well well-lg clearfix">
-				<ul class="nav nav-pills">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="#">Profile</a></li>
-					<li role="presentation"><a href="#">Messages</a></li>
-					<li role="presentation" class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Item 1</a></li>
-							<li><a href="#">Item 2</a></li>
-							<li><a href="#">Item 3</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-    
-    <button type="button" class="btn btn-default"><a href="bs337index.html">Back</a></button>
+    <hr>
+    <h3 class="text-center">Bootstrap Pills with dropdowns</h3>
+    <p class="text-center">Add dropdown menus to nav pills</p>
+    <div class="row">
+      <div class="well well-lg clearfix" style="background-color: lightcyan;">
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	</div>
+    <a class="btn btn-primary" href="bs337index.html" role="button">
+      <i class="fa fa-arrow-left"></i> Back</a>
+    <p></p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </div>
 
 </body>
 

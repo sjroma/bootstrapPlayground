@@ -2,138 +2,143 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Git Cheat Sheet</title>
+  <title>Git Cheat Sheet</title>
 
-	<!-- Bootstrap CSS -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<style>
-	</style>
-	<link rel="stylesheet" href="style.css">
+  <style>
+
+
+  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">BootStrap Playground</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="index.html">Home</a></li>
-				<li class="active-page"><a href="gitCheatSheet.html">Git Cheat Sheet</a></li>
-				<li><a href="lorem.html">Lorem Ipsum</a></li>
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">BootStrap Playground</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li class="active-page"><a href="gitCheatSheet.html">Git Cheat Sheet</a></li>
+        <li><a href="lorem.html">Lorem Ipsum</a></li>
         <li><a href="bs337/bs337index.html">Bootstrap 3.3.7</a></li>
         <li><a href="bsBeta/bsBetaindex.html">Bootstrap Beta</a></li>
-				<li class="disabled"><a href="#">Disabled</a></li>
-			</ul>
-		</div>
-	</nav>
+        <li class="disabled"><a href="#">Disabled</a></li>
+      </ul>
+    </div>
+  </nav>
 
-	<div class="container">
-		<h1 class="text-primary text-center">Git Cheat Sheet</h1>
-		<div class="table-responsive">
-			<table class="table table-condensed table-striped table-bordered">
-				<thead>
-					<tr>
-						<th>CREATE</th>
-						<th>LOCAL CHANGES</th>
-						<th>BRANCHES & TAGS</th>
-						<th>MERGE & REBASE</th>
-						<th>COMMIT HISTORY</th>
-						<th>UPDATE & PUBLISH</th>
-						<th>UNDO</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Clone an existing repository <br> <b>$ git clone ssh://user@domain.com/repo.git</b></td>
-						<td>Changed files in your working directory <br> <b>$ git status</b></td>
-						<td>List all existing branches <br> <b>$ git branch -av</b></td>
-						<td>Merge &lt;branch&gt; into your current HEAD <br> <b>$ git merge &lt;branch&gt;</b></td>
-						<td>Show all commits, starting with newest <br> <b>$ git log</b></td>
-						<td>List all currently configured remotes <br> <b>$ git remote -v</b></td>
-						<td>Discard all local changes in your working directory <br> <b>$ git reset --hard HEAD</b></td>
-					</tr>
-					<tr>
-						<td>Create a new local repository <br> <b>$ git init</b></td>
-						<td>Changes to tracked files <br> <b>$ git diff</b></td>
-						<td>Switch HEAD branch <br> <b>$ git checkout &lt;branch&gt;</b></td>
-						<td>Rebase your current HEAD onto &lt;branch&gt; <br> <i>Don't rebase published commits</i> <br> <b>$ git rebase &lt;branch&gt;</b></td>
-						<td>Show changes over time for a specific file <br> <b>$ git log -p &lt;file&gt;</b></td>
-						<td>Show information about a remote <br> <b>$ git remote show &lt;remote&gt;</b></td>
-						<td>Discard local changes in a specific file <br> <b>$ git checkout HEAD &lt;file&gt;</b></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Add all current changes to the next commit <br> <b>$ git add .</b></td>
-						<td>Create a new branch based on your current HEAD <br> <b>$ git branch &lt;new-branch&gt;</b></td>
-						<td>Abort a rebase <br> <b>$ git rebase --abort</b></td>
-						<td>Who changed what and when in &lt;file&gt; <br> <b>$ git blame &lt;file&gt;</b></td>
-						<td>Add new remote repository named &lt;remote&gt; <br> <b>$ git remote add &lt;shortname&gt; &lt;url&gt;</b></td>
-						<td>Revert a commit (by producing a new commit with contrary changes) <br> <b>$ git revert &lt;commit&gt;</b></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Add some changes in &lt;file&gt; to the next commit <br> <b>$ git add -p &lt;file&gt;</b></td>
-						<td>Create a new tracking branch based on a remote branch <br> <b>$ git checkout --track &lt;remote/branch&gt;</b></td>
-						<td>Continue a rebase after resolving conflicts <br> <b>$ git rebase --continue</b></td>
-						<td>View change history of a file <br> <b>$ git log &lt;filename&gt;</b></td>
-						<td>Download all changes from &lt;remote&gt;, but don't integrate into HEAD <br><b>$ git fetch &lt;remote&gt;</b></td>
-						<td>Reset your HEAD pointer to a previous commit <br>...and discard all changes since then <br> <b>$ git reset --hard &lt;commit&gt;</b></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Commit all local changes in tracked files <br> <b>$ git commit -a</b></td>
-						<td>Delete a local branch <br> <b>$ git branch -d &lt;branch&gt;</b></td>
-						<td>Use your configured merge tool to solve conflicts <br> <b>$ git mergetool</b></td>
-						<td></td>
-						<td>Download changes and directly merge/integrate into HEAD <br> <b>$ git pull &lt;remote&gt; &lt;branch&gt;</b></td>
-						<td>...and preserve all changes as unstaged changes <br> <b>$ git reset &lt;commit&gt;</b></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Commit previously staged changes <br> <b>$ git commit</b></td>
-						<td>Mark the current commit with a tag <br> <b>$ git tag &lt;tag-name&gt;</b></td>
-						<td>Use your editor to manually solve conflicts and (after resolving) mark file as resolved <br> <b>$ git add &lt;resolved-file&gt;</b> <br> <b>$ git rm &lt;resolved-file&gt;</b></td>
-						<td></td>
-						<td>Publish local changes on a remote <br> <b>$ git push &lt;remote&gt; &lt;branch&gt;</b></td>
-						<td>...and preserve uncommitted local changes <br> <b>$ git reset --keep &lt;commit&gt;</b></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>Change the last commit <br> <i>Don't amend published commits</i> <br> <b>$ git commit --amend</b></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td>Delete a branch on the remote <br> <b>$ git branch -dr &lt;remote/branch&gt;</b></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td>Publish your tags <br> <b>$ git push --tags</b></td>
-						<td></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<p>This table blatantly plagiarized from <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">git-tower.com</a>  Visit their site to learn about their Git client and to sign up for this and five other cheat sheets. </p>
+  <div class="container">
+    <h1 class="text-primary text-center">Git Cheat Sheet</h1>
+    <div class="table-responsive">
+      <table class="table table-condensed table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>CREATE</th>
+            <th>LOCAL CHANGES</th>
+            <th>BRANCHES & TAGS</th>
+            <th>MERGE & REBASE</th>
+            <th>COMMIT HISTORY</th>
+            <th>UPDATE & PUBLISH</th>
+            <th>UNDO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clone an existing repository <br> <b>$ git clone ssh://user@domain.com/repo.git</b></td>
+            <td>Changed files in your working directory <br> <b>$ git status</b></td>
+            <td>List all existing branches <br> <b>$ git branch -av</b></td>
+            <td>Merge &lt;branch&gt; into your current HEAD <br> <b>$ git merge &lt;branch&gt;</b></td>
+            <td>Show all commits, starting with newest <br> <b>$ git log</b></td>
+            <td>List all currently configured remotes <br> <b>$ git remote -v</b></td>
+            <td>Discard all local changes in your working directory <br> <b>$ git reset --hard HEAD</b></td>
+          </tr>
+          <tr>
+            <td>Create a new local repository <br> <b>$ git init</b></td>
+            <td>Changes to tracked files <br> <b>$ git diff</b></td>
+            <td>Switch HEAD branch <br> <b>$ git checkout &lt;branch&gt;</b></td>
+            <td>Rebase your current HEAD onto &lt;branch&gt; <br> <i>Don't rebase published commits</i> <br> <b>$ git rebase &lt;branch&gt;</b></td>
+            <td>Show changes over time for a specific file <br> <b>$ git log -p &lt;file&gt;</b></td>
+            <td>Show information about a remote <br> <b>$ git remote show &lt;remote&gt;</b></td>
+            <td>Discard local changes in a specific file <br> <b>$ git checkout HEAD &lt;file&gt;</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Add all current changes to the next commit <br> <b>$ git add .</b></td>
+            <td>Create a new branch based on your current HEAD <br> <b>$ git branch &lt;new-branch&gt;</b></td>
+            <td>Abort a rebase <br> <b>$ git rebase --abort</b></td>
+            <td>Who changed what and when in &lt;file&gt; <br> <b>$ git blame &lt;file&gt;</b></td>
+            <td>Add new remote repository named &lt;remote&gt; <br> <b>$ git remote add &lt;shortname&gt; &lt;url&gt;</b></td>
+            <td>Revert a commit (by producing a new commit with contrary changes) <br> <b>$ git revert &lt;commit&gt;</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Add some changes in &lt;file&gt; to the next commit <br> <b>$ git add -p &lt;file&gt;</b></td>
+            <td>Create a new tracking branch based on a remote branch <br> <b>$ git checkout --track &lt;remote/branch&gt;</b></td>
+            <td>Continue a rebase after resolving conflicts <br> <b>$ git rebase --continue</b></td>
+            <td>View change history of a file <br> <b>$ git log &lt;filename&gt;</b></td>
+            <td>Download all changes from &lt;remote&gt;, but don't integrate into HEAD <br><b>$ git fetch &lt;remote&gt;</b></td>
+            <td>Reset your HEAD pointer to a previous commit <br>...and discard all changes since then <br> <b>$ git reset --hard &lt;commit&gt;</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Commit all local changes in tracked files <br> <b>$ git commit -a</b></td>
+            <td>Delete a local branch <br> <b>$ git branch -d &lt;branch&gt;</b></td>
+            <td>Use your configured merge tool to solve conflicts <br> <b>$ git mergetool</b></td>
+            <td></td>
+            <td>Download changes and directly merge/integrate into HEAD <br> <b>$ git pull &lt;remote&gt; &lt;branch&gt;</b></td>
+            <td>...and preserve all changes as unstaged changes <br> <b>$ git reset &lt;commit&gt;</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Commit previously staged changes <br> <b>$ git commit</b></td>
+            <td>Mark the current commit with a tag <br> <b>$ git tag &lt;tag-name&gt;</b></td>
+            <td>Use your editor to manually solve conflicts and (after resolving) mark file as resolved <br> <b>$ git add &lt;resolved-file&gt;</b> <br> <b>$ git rm &lt;resolved-file&gt;</b></td>
+            <td></td>
+            <td>Publish local changes on a remote <br> <b>$ git push &lt;remote&gt; &lt;branch&gt;</b></td>
+            <td>...and preserve uncommitted local changes <br> <b>$ git reset --keep &lt;commit&gt;</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Change the last commit <br> <i>Don't amend published commits</i> <br> <b>$ git commit --amend</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Delete a branch on the remote <br> <b>$ git branch -dr &lt;remote/branch&gt;</b></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Publish your tags <br> <b>$ git push --tags</b></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>This table blatantly plagiarized from <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">git-tower.com</a> Visit their site to learn about their Git client and to sign up for this and five other cheat sheets.</p>
+    <p>It was done as an exercise in making a table with Bootstrap and was created with the <code>table-condensed table-striped table-bordered</code> classes.</p>
 
-		<button type="button" class="btn btn-default"><a href="index.html">Back</a></button>
-	</div> <!-- /container -->
+    <a class="btn btn-primary" href="index.html" role="button">Back</a>
+    <p></p>
+  </div>
+  <!-- /container -->
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
