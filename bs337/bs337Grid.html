@@ -10,8 +10,8 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  
-    <!-- Font Awesome -->
+
+  <!-- Font Awesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <style>
@@ -51,9 +51,10 @@
     <!-- <div class="jumbotron"> -->
     <h1 class="text-primary text-center">Bootstrap Grid Examples</h1>
     <h4 class="text-primary text-center">Bootstrap v3.3.7</h4>
+    <p>Bootstrap has a fluid grid system that scales up to 12 columns as the device or viewport size increases. Google bootstrap grid to read and learn more.</p>
 
     <hr>
-    <p class="text-center">This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page within the parent <code>.container</code>.</p>
+    <p class="text-center">This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page within the parent <code>.container</code>. On smaller devices, the columns simply stack.<br> For example; <code>.col-sm-4</code> class</p>
     <div class="container text-center">
       <div class="row">
         <div class="well well-lg clearfix">
@@ -101,104 +102,6 @@
           </div>
         </div>
         <div class="col-sm-4">.col-sm-4</div>
-      </div>
-    </div>
-
-
-    <hr>
-    <h3 class="text-center ">Push and Pull - Change Column Ordering</h3>
-    <p class="text-center">Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes:</p>
-    <div class="container text-center">
-      <div class="row">
-        <div class="well well-lg clearfix">
-          <div class="col-xs-4 col-xs-push-8">
-            <div class="alert alert-warning">
-              1
-            </div>
-          </div>
-          <div class="col-xs-8 col-xs-pull-4">
-            <div class="alert alert-info">
-              2
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <div class="container text-center">
-      <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong></p>
-      <div class="row">
-        <div class="well well-lg clearfix">
-          <div class="col-xs-12 col-md-4 col-md-push-4">
-            <div class="alert alert-warning">
-              <b>2</b>
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-md-4 col-md-pull-4">
-            <div class="alert alert-info">
-              <b>1</b>
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-md-4">
-            <div class="alert alert-danger">
-              <b>3</b>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="text-center"><strong>2 is pushed below 1 and 3 on small screens</strong></p>
-    <div class="row">
-      <div class="well well-lg clearfix">
-
-        <div class="col-xs-6 col-md-4">
-          <div class="alert alert-info">
-            <b>1</b>
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-md-4 col-md-push-4">
-          <div class="alert alert-danger">
-            <b>3</b>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-md-4 col-md-pull-4">
-          <div class="alert alert-warning">
-            <b>2</b>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <p class="text-center"><strong>1 moves to the right as a sidebar on large screens</strong></p>
-    <div class="row">
-      <div class="well well-lg clearfix">
-        <div class="col-sm-4 col-md-3 col-md-push-9">
-          <b>1</b>
-        </div>
-        <div class="col-sm-8 col-md-9 col-md-pull-3">
-          <b>2</b>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-    <div class="container">
-      <div class="row">
-        <div class="well well-lg clearfix">
-          <div class="bs-example">
-            <p class="hidden-xs">This paragraph is hidden only on <strong>Extra Small Devices</strong> that have a screen width less than <strong>768px</strong>.</p>
-            <p class="hidden-sm">This paragraph is hidden only on <strong>Small Devices</strong> that have a screen width greater than or equal to <strong>768px</strong> but less than <strong>992px</strong>.</p>
-            <p class="hidden-md">This paragraph is hidden only on <strong>Medium Devices</strong> that have a screen width greater than or equal to <strong>992px</strong> but less than <strong>1200px</strong>.</p>
-            <p class="hidden-lg">This paragraph is hidden only on <strong>Large Devices</strong> that have a screen width greater than or equal to <strong>1200px</strong>.</p>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -258,20 +161,122 @@
       </div>
     </div>
 
+    <hr>
+    <h3 class="text-center ">Push and Pull - Change Column Ordering</h3>
+    <p class="text-center">Columns don't have to simply stack in smaller devices. Use the extra small and medium device grid classes by adding .col-xs-* .col-md-* to the columns. Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes. <br>For example, the column labeled 1 uses the<code>col-xs-4 col-xs-push-8</code> class and 2 uses the <code>col-xs-8 col-xs-pull-4</code> class</p>
+    <div class="container text-center">
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="col-xs-4 col-xs-push-8">
+            <div class="alert alert-warning">
+              1
+            </div>
+          </div>
+          <div class="col-xs-8 col-xs-pull-4">
+            <div class="alert alert-info">
+              2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="container text-center">
+      <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong> <br>Ordering of columns is important in your code. Columns in this example are coded 2, 1, 3</p>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="col-xs-12 col-md-4 col-md-push-4">
+            <div class="alert alert-warning">
+              <b>2</b>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4 col-md-pull-4">
+            <div class="alert alert-info">
+              <b>1</b>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <div class="alert alert-danger">
+              <b>3</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <p class="text-center"><strong>2 is pushed below 1 and 3 on small screens</strong> <br>Columns in this example are coded 1, 3, 2</p>
+      <div class="row">
+        <div class="well well-lg clearfix">
+
+          <div class="col-xs-6 col-md-4">
+            <div class="alert alert-info">
+              <b>1</b>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-4 col-md-push-4">
+            <div class="alert alert-danger">
+              <b>3</b>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4 col-md-pull-4">
+            <div class="alert alert-warning">
+              <b>2</b>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <p class><strong>1 moves to the right as a sidebar on large screens</strong></p>
+      <div class="row">
+        <div class="well well-lg clearfix">
+          <div class="col-sm-4 col-md-3 col-md-push-9">
+            <b>1</b>
+          </div>
+          <div class="col-sm-8 col-md-9 col-md-pull-3">
+            <b>2</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="container">
+      <div class="row">
+        <p class="text-center">Paragrahs can be hidden depending on the device size. Resize the browser window to see this in action.</p>
+        <div class="well well-lg clearfix">
+          <div class="bs-example">
+            <p class="hidden-xs">This paragraph is hidden only on <strong>Extra Small Devices</strong> that have a screen width less than <strong>768px</strong>.</p>
+            <p class="hidden-sm">This paragraph is hidden only on <strong>Small Devices</strong> that have a screen width greater than or equal to <strong>768px</strong> but less than <strong>992px</strong>.</p>
+            <p class="hidden-md">This paragraph is hidden only on <strong>Medium Devices</strong> that have a screen width greater than or equal to <strong>992px</strong> but less than <strong>1200px</strong>.</p>
+            <p class="hidden-lg">This paragraph is hidden only on <strong>Large Devices</strong> that have a screen width greater than or equal to <strong>1200px</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <p><br></p>
     <a class="btn btn-primary" href="bs337index.html" role="button">
       <i class="fa fa-arrow-left"></i> Back</a>
     <p></p>
-    
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </div>
 
-  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
