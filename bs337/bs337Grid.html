@@ -44,6 +44,7 @@
     }
 
   </style>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -252,6 +253,12 @@
     <div class="container">
       <div class="row">
         <p class="text-center">Paragrahs can be hidden depending on the device size. Resize the browser window to see this in action.</p>
+        <ul>
+          <li><strong>Extra small devices</strong> Phones (&lt;768px)</li>
+          <li><strong>Small devices</strong> Tablets (&ge;768px)</li>
+          <li><strong>Medium devices</strong> Desktops (&ge; 992px)</li>
+          <li><strong>Large devices</strong> Desktops (&ge; 1200px)</li>
+        </ul>
         <div class="well well-lg clearfix">
           <div class="bs-example">
             <p class="hidden-xs">This paragraph is hidden only on <strong>Extra Small Devices</strong> that have a screen width less than <strong>768px</strong>.</p>
@@ -261,22 +268,98 @@
           </div>
         </div>
       </div>
+
+      <p class="text-center">I found the following table at <a href="https://getbootstrap.com/docs/3.3/css/#grid-offsetting" target="_blank">Available Classes</a> and copied it here because I have a hard time remembering device sizes and hate looking it up all the time.</p>
+      <div class="row">
+        <div class=table-responsive>
+          <table class="table table-bordered table-striped table-condensed responsive-utilities">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Extra small devices <small>Phones (&lt;768px)</small></th>
+                <th>Small devices <small>Tablets (&ge;768px)</small></th>
+                <th>Medium devices <small>Desktops (&ge;992px)</small></th>
+                <th>Large devices <small>Desktops (&ge;1200px)</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope=row><code>.visible-xs-*</code></th>
+                <td class=is-visible>Visible</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-hidden>Hidden</td>
+              </tr>
+              <tr>
+                <th scope=row><code>.visible-sm-*</code></th>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-hidden>Hidden</td>
+              </tr>
+              <tr>
+                <th scope=row><code>.visible-md-*</code></th>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-hidden>Hidden</td>
+              </tr>
+              <tr>
+                <th scope=row><code>.visible-lg-*</code></th>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-visible>Visible</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <th scope=row><code>.hidden-xs</code></th>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-visible>Visible</td>
+              </tr>
+              <tr>
+                <th scope=row><code>.hidden-sm</code></th>
+                <td class=is-visible>Visible</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-visible>Visible</td>
+              </tr>
+              <tr>
+                <th scope=row><code>.hidden-md</code></th>
+                <td class=is-visible>Visible</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-hidden>Hidden</td>
+                <td class=is-visible>Visible</td>
+              </tr>
+              <tr>
+                <th scope=row><code>.hidden-lg</code></th>
+                <td class=is-visible>Visible</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-visible>Visible</td>
+                <td class=is-hidden>Hidden</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p></p>
+      <a class="btn btn-primary" href="bs337index.html" role="button">
+      <i class="fa fa-arrow-left"></i> Back</a>
+      <p></p>
+
     </div>
 
-    <p><br></p>
-    <a class="btn btn-primary" href="bs337index.html" role="button">
-      <i class="fa fa-arrow-left"></i> Back</a>
-    <p></p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
