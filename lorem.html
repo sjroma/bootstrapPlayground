@@ -22,8 +22,16 @@
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
       <div class="navbar-header">
+        <!-- collapse button (for hamburger menu on small screens) -->
+        <!-- styled because button and icon-bar did not show on navbar-light -->
+        <button type="button" class="navbar-toggle" style="background-color: #d3e2ed;" data-toggle="collapse" data-target="#lightNavbar">
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>                       
+        </button>
         <a class="navbar-brand" href="#">BootStrap Playground</a>
       </div>
+      <div class="collapse navbar-collapse" id="lightNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">Home</a></li>
         <li><a href="gitCheatSheet.html">Git Cheat Sheet</a></li>
@@ -32,6 +40,7 @@
         <li><a href="bsBeta/bsBetaindex.html">Bootstrap Beta</a></li>
         <li class="disabled"><a href="#">Disabled</a></li>
       </ul>
+      </div>
     </div>
   </nav>
 
