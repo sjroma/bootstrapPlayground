@@ -1,10 +1,14 @@
+body {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
 .active {
 	background-color: lightgrey;
 }
 
 /*highlights the selected page in the NavBar*/
 .active-page {
-	background-color: lightgrey;
+	background-color: #d3f2fd;
 }
 
 .table-condensed, .table-sm {
