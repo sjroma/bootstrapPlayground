@@ -10,31 +10,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
   <style>
-    .col-sm {
-      background-color: lightgreen;
-    }
-
-    .col-sm-3 {
-      background-color: lightblue;
-    }
-
-    .col-sm-4 {
-      background-color: lightcoral;
-    }
-
-    .col-sm-6 {
-      background-color: lightgray
-    }
-
-    .col-sm-8 {
-      background-color: lightgoldenrodyellow;
-    }
-
-    .col-md-6 {
-      background-color: lightgreen;
-    }
-
     .example1 {
       background-color: lightblue;
     }
@@ -47,43 +26,64 @@
 </head>
 
 <body>
-  <div class="container text-center">
-    <h1 class="text-primary">Bootstrap Grid Examples <small class="text-muted"> 4.0.0-beta.2</small></h1>
+  <div class="container">
+    <h1 class="text-primary text-center">Bootstrap Grid Examples</h1>
+    <h4 class="text-primary text-center"> 4.0.0-beta.2</h4>
 
-    <div class="jumbotron">
-      <p>This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page with the parent <code>.container</code>.</p>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-          <div class="col-sm">
-            One of three columns
-          </div>
-        </div>
+    <hr>
+    <p class="text-center">This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page within the parent <code>.container</code>. Resize the browser window to see how the rows stack on smaller screens.</p>
+    <div class="row">
+      <div class="example1 col-sm-4 text-center">
+        .col-sm-4
+      </div>
+      <div class="example2 col-sm-4 text-center">
+        .col-sm-4
+      </div>
+      <div class="example1 col-sm-4 text-center">
+        .col-sm-4
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-md-4 text-center">
+        .col-md-4
+      </div>
+      <div class="example2 col-md-4 text-center">
+        .col-md-4
+      </div>
+      <div class="example1 col-md-4 text-center">
+        .col-md-4
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-lg-4 text-center">
+        .col-lg-4
+      </div>
+      <div class="example2 col-lg-4 text-center">
+        .col-lg-4
+      </div>
+      <div class="example1 col-lg-4 text-center">
+        .col-lg-4
       </div>
     </div>
 
-    <div class="jumbotron">
-      <p><strong>Three unequal columns</strong></p>
-      <div class="row">
-        <div class="col-sm-3">.col-sm-3</div>
-        <div class="col-sm-6">.col-sm-6</div>
-        <div class="col-sm-3">.col-sm-3</div>
-      </div>
+    <hr>
+    <p class="text-center"><strong>Three unequal columns</strong></p>
+    <div class="row">
+      <div class="example1 col-sm-3 text-center">.col-sm-3</div>
+      <div class="example2 col-sm-6 text-center">.col-sm-6</div>
+      <div class="example1 col-sm-3 text-center">.col-sm-3</div>
     </div>
 
-    <div class="jumbotron">
-      <p><strong>Two unequal columns</strong></p>
-      <div class="row">
-        <div class="col-sm-4">.col-sm-4</div>
-        <div class="col-sm-8">.col-sm-8</div>
-      </div>
+    <hr>
+    <p class="text-center"><strong>Two unequal columns</strong></p>
+    <div class="row">
+      <div class="example1 col-sm-4 text-center">.col-sm-4</div>
+      <div class="example2 col-sm-8 text-center">.col-sm-8</div>
     </div>
 
+    <hr>
     <div class="jumbotron">
       <p><strong>Two columns with two nested columns</strong></p>
       <div class="row">
@@ -146,79 +146,81 @@
       </div>
     </div>
 
-    <div class="jumbotron">
-      <p><strong>2 is pushed above 1 and 3 on small screens</strong></p>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-md-push-4">
-          <div class="alert alert-warning">
-            <b>2</b>
-          </div>
+    <hr>
+    <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong></p>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-md-push-4 text-center">
+        <div class="alert alert-warning">
+          <b>2</b>
         </div>
+      </div>
 
-        <div class="col-sm-6 col-md-4 col-md-pull-4">
-          <div class="alert alert-info">
-            <b>1</b>
-          </div>
+      <div class="col-sm-6 col-md-4 col-md-pull-4 text-center">
+        <div class="alert alert-info">
+          <b>1</b>
         </div>
+      </div>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="alert alert-danger">
-            <b>3</b>
-          </div>
+      <div class="col-sm-6 col-md-4 text-center">
+        <div class="alert alert-danger">
+          <b>3</b>
         </div>
       </div>
     </div>
 
-    <div class="jumbotron">
-      <p><strong>12 column grid</strong></p>
-      <div class="row">
-        <div class="example1 col-md-6">Content col-md-6</div>
-        <div class="example2 col-md-6">Content col-md-6</div>
-      </div>
-
-      <br>
-      <div class="row">
-        <div class="example1 col-md-4">Content col-md-4</div>
-        <div class="example2 col-md-4">Content col-md-4</div>
-        <div class="example1 col-md-4">Content col-md-4</div>
-      </div>
-
-      <br>
-      <div class="row">
-        <div class="example2 col-md-3">Content col-md-3</div>
-        <div class="example1 col-md-3">Content md-3</div>
-        <div class="example2 col-md-3">Content md-3</div>
-        <div class="example1 col-md-3">Content md-3</div>
-      </div>
-
-      <br>
-      <div class="row">
-        <div class="example2 col-md-2">col-md-2</div>
-        <div class="example1 col-md-2">col-md-2</div>
-        <div class="example2 col-md-2">col-md-2</div>
-        <div class="example1 col-md-2">col-md-2</div>
-        <div class="example2 col-md-2">col-md-2</div>
-        <div class="example1 col-md-2">col-md-2</div>
-      </div>
-
-      <br>
-      <div class="row">
-        <div class="example2 col-md-1">Content</div>
-        <div class="example1 col-md-1">Content</div>
-        <div class="example2 col-md-1">Content</div>
-        <div class="example1 col-md-1">Content</div>
-        <div class="example2 col-md-1">Content</div>
-        <div class="example1 col-md-1">Content</div>
-        <div class="example2 col-md-1">Content</div>
-        <div class="example1 col-md-1">Content</div>
-        <div class="example2 col-md-1">Content</div>
-        <div class="example1 col-md-1">Content</div>
-        <div class="example2 col-md-1">Content</div>
-        <div class="example1 col-md-1">Content</div>
-      </div>
+    <hr>
+    <p class="text-center"><strong>12 column grid</strong></p>
+    <div class="row">
+      <div class="example1 col-md-6 text-center">.col-md-6</div>
+      <div class="example2 col-md-6 text-center">.col-md-6</div>
     </div>
-    <a class="btn btn-primary" href="bsBetaindex.html" role="button">Back</a>
-    <p></p>
+
+    <br>
+    <div class="row">
+      <div class="example1 col-md-4 text-center">.col-md-4</div>
+      <div class="example2 col-md-4 text-center">.col-md-4</div>
+      <div class="example1 col-md-4 text-center">.col-md-4</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="example2 col-md-3 text-center">.col-md-3</div>
+      <div class="example1 col-md-3 text-center">.col-md-3</div>
+      <div class="example2 col-md-3 text-center">.col-md-3</div>
+      <div class="example1 col-md-3 text-center">.col-md-3</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="example2 col-md-2 text-center">.col-md-2</div>
+      <div class="example1 col-md-2 text-center">.col-md-2</div>
+      <div class="example2 col-md-2 text-center">.col-md-2</div>
+      <div class="example1 col-md-2 text-center">.col-md-2</div>
+      <div class="example2 col-md-2 text-center">.col-md-2</div>
+      <div class="example1 col-md-2 text-center">.col-md-2</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="example2 col-md-1 text-center">Content</div>
+      <div class="example1 col-md-1 text-center">Content</div>
+      <div class="example2 col-md-1 text-center">Content</div>
+      <div class="example1 col-md-1 text-center">Content</div>
+      <div class="example2 col-md-1 text-center">Content</div>
+      <div class="example1 col-md-1 text-center">Content</div>
+      <div class="example2 col-md-1 text-center">Content</div>
+      <div class="example1 col-md-1 text-center">Content</div>
+      <div class="example2 col-md-1 text-center">Content</div>
+      <div class="example1 col-md-1 text-center">Content</div>
+      <div class="example2 col-md-1 text-center">Content</div>
+      <div class="example1 col-md-1 text-center">Content</div>
+    </div>
+
+    <hr>
+    <footer>
+      <p><a class="btn btn-primary" href="bs337index.html" role="button">
+      <i class="fa fa-arrow-left"></i> Back</a></p>
+    </footer>
   </div>
 
   <!-- Optional JavaScript -->
