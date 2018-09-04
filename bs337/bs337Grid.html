@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bootstrap Grids</title>
+  <title>Bootstrap Grid</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -45,15 +45,27 @@
     <hr>
     <p class="text-center">This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page within the parent <code>.container</code> class. On smaller devices, the columns simply stack.<br> For example; <code>.col-sm-4</code> class</p>
     <div class="row">
-      <div class="example1 col-sm-4 text-center">
-        One of three columns
-      </div>
-      <div class="example2 col-sm-4 text-center">
-        Two of three columns
-      </div>
-      <div class="example1 col-sm-4 text-center">
-        Three of three columns
-      </div>
+      <div class="example1 col-xs-4 text-center">.col-xs-4</div>
+      <div class="example2 col-xs-4 text-center">.col-xs-4</div>
+      <div class="example1 col-xs-4 text-center">.col-xs-4</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-sm-4 text-center">.col-sm-4</div>
+      <div class="example2 col-sm-4 text-center">.col-sm-4</div>
+      <div class="example1 col-sm-4 text-center">.col-sm-4</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-md-4 text-center">.col-md-4</div>
+      <div class="example2 col-md-4 text-center">.col-md-4</div>
+      <div class="example1 col-md-4 text-center">.col-md-4</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-lg-4 text-center">.col-lg-4</div>
+      <div class="example2 col-lg-4 text-center">.col-lg-4</div>
+      <div class="example1 col-lg-4 text-center">.col-lg-4</div>
     </div>
     <hr>
 
@@ -132,15 +144,17 @@
     </div>
     <hr>
 
-    <h3 class="text-center ">Push and Pull - Change Column Ordering</h3>
-    <p class="text-center">Columns don't have to simply stack in smaller devices. Use the extra small and medium device grid classes by adding .col-xs-* .col-md-* to the columns. Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes. <br>For example, the column labeled 1 uses the<code>col-xs-4 col-xs-push-8</code> class and 2 uses the <code>col-xs-8 col-xs-pull-4</code> class</p>
+    <h3 class="text-center">Push and Pull - Change Column Ordering</h3>
+    <h4 class="text-center">Write the code “Mobile First”</h4>
+    <p class="text-center">This means the HTML and CSS you first send to the browser are for mobile devices. So you should write your HTML markup in the order you want it to appear on mobile. Then use the push/pull classes to rearrange things on larger devices</p>
+    <p class="text-center">Columns don't have to simply stack in smaller devices. Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes. <br>For example, the column labeled 1 uses the<code>col-sm-4 col-sm-push-8</code> class and 2 uses the <code>col-sm-8 col-sm-pull-4</code> class</p>
     <div class="row">
-      <div class="col-xs-4 col-xs-push-8 text-center">
+      <div class="col-sm-4 col-sm-push-8 text-center">
         <div class="alert alert-warning">
           1
         </div>
       </div>
-      <div class="col-xs-8 col-xs-pull-4 text-center">
+      <div class="col-sm-8 col-sm-pull-4 text-center">
         <div class="alert alert-info">
           2
         </div>
@@ -148,7 +162,7 @@
     </div>
     <hr>
 
-    <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong> <br>Ordering of columns is important in your code. Columns in this example are coded 2, 1, 3</p>
+    <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong> <br>Mobile first. Columns in this example are coded 2, 1, 3</p>
     <div class="row">
       <div class="col-xs-12 col-md-4 col-md-push-4 text-center">
         <div class="alert alert-warning">
@@ -170,7 +184,7 @@
     </div>
     <hr>
 
-    <p class="text-center"><strong>2 is pushed below 1 and 3 on small screens</strong> <br>Columns in this example are coded 1, 3, 2</p>
+    <p class="text-center"><strong>2 is pushed below 1 and 3 on small screens</strong> <br>Mobile first. Columns in this example are coded 1, 3, 2</p>
     <div class="row">
       <div class="col-xs-6 col-md-4 text-center">
         <div class="alert alert-info">
