@@ -14,12 +14,24 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <style>
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+    }
+
     .example1 {
       background-color: lightblue;
     }
 
     .example2 {
       background-color: lightcyan;
+    }
+
+    .example3 {
+      background-color: lightcoral;
+    }
+
+    .example4 {
+      background-color: lightgoldenrodyellow;
     }
 
   </style>
@@ -31,41 +43,35 @@
     <h4 class="text-primary text-center"> 4.0.0-beta.2</h4>
 
     <hr>
-    <p class="text-center">This example creates three equal-width columns on small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page within the parent <code>.container</code>. Resize the browser window to see how the rows stack on smaller screens.</p>
+    <p class="text-center">This example creates three equal-width columns on extra-small, small, medium, large, and extra large devices using the predefined grid classes. Those columns are centered in the page within the parent <code>.container</code>. While Bootstrap uses <code>em</code>s or <code>rem</code>s for defining most sizes, <code>px</code>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the font size. Resize the browser window to see how the rows stack on smaller screens.</p>
     <div class="row">
-      <div class="example1 col-sm-4 text-center">
-        .col-sm-4
-      </div>
-      <div class="example2 col-sm-4 text-center">
-        .col-sm-4
-      </div>
-      <div class="example1 col-sm-4 text-center">
-        .col-sm-4
-      </div>
+      <div class="example1 col-4 text-center">.col-4</div>
+      <div class="example2 col-4 text-center">.col-4</div>
+      <div class="example1 col-4 text-center">.col-4</div>
     </div>
     <br>
     <div class="row">
-      <div class="example1 col-md-4 text-center">
-        .col-md-4
-      </div>
-      <div class="example2 col-md-4 text-center">
-        .col-md-4
-      </div>
-      <div class="example1 col-md-4 text-center">
-        .col-md-4
-      </div>
+      <div class="example2 col-sm-4 text-center">.col-sm-4</div>
+      <div class="example1 col-sm-4 text-center">.col-sm-4</div>
+      <div class="example2 col-sm-4 text-center">.col-sm-4</div>
     </div>
     <br>
     <div class="row">
-      <div class="example1 col-lg-4 text-center">
-        .col-lg-4
-      </div>
-      <div class="example2 col-lg-4 text-center">
-        .col-lg-4
-      </div>
-      <div class="example1 col-lg-4 text-center">
-        .col-lg-4
-      </div>
+      <div class="example1 col-md-4 text-center">.col-md-4</div>
+      <div class="example2 col-md-4 text-center">.col-md-4</div>
+      <div class="example1 col-md-4 text-center">.col-md-4</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example2 col-lg-4 text-center">.col-lg-4</div>
+      <div class="example1 col-lg-4 text-center">.col-lg-4</div>
+      <div class="example2 col-lg-4 text-center">.col-lg-4</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-xl-4 text-center">.col-xl-4</div>
+      <div class="example2 col-xl-4 text-center">.col-xl-4</div>
+      <div class="example1 col-xl-4 text-center">.col-xl-4</div>
     </div>
 
     <hr>
@@ -75,6 +81,18 @@
       <div class="example2 col-sm-6 text-center">.col-sm-6</div>
       <div class="example1 col-sm-3 text-center">.col-sm-3</div>
     </div>
+    <br>
+    <div class="row">
+      <div class="example2 col-md-3 text-center">.col-md-3</div>
+      <div class="example1 col-md-6 text-center">.col-md-6</div>
+      <div class="example2 col-md-3 text-center">.col-md-3</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-lg-3 text-center">.col-lg-3</div>
+      <div class="example2 col-lg-6 text-center">.col-lg-6</div>
+      <div class="example1 col-lg-3 text-center">.col-lg-3</div>
+    </div>
 
     <hr>
     <p class="text-center"><strong>Two unequal columns</strong></p>
@@ -82,86 +100,97 @@
       <div class="example1 col-sm-4 text-center">.col-sm-4</div>
       <div class="example2 col-sm-8 text-center">.col-sm-8</div>
     </div>
-
-    <hr>
-    <div class="jumbotron">
-      <p><strong>Two columns with two nested columns</strong></p>
-      <div class="row">
-        <div class="col-sm-8">
-          .col-sm-8
-          <div class="row">
-            <div class="col-sm-6">.col-sm-6</div>
-            <div class="col-sm-6">.col-sm-6</div>
-          </div>
-        </div>
-        <div class="col-sm-4">.col-sm-4</div>
-      </div>
-    </div>
-
-    <div class="jumbotron">
-      <p><strong>Mixed mobile and desktop</strong></p>
-      <div class="row">
-        <div class="col-xs-7 col-sm-6 col-lg-8">.col-xs-7 .col-sm-6 .col-lg-8</div>
-        <div class="col-xs-5 col-sm-6 col-lg-4">.col-xs-5 .col-sm-6 .col-lg-4</div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-xs-6 col-sm-8 col-lg-10">.col-xs-6 .col-sm-8 .col-lg-10</div>
-        <div class="col-xs-6 col-sm-4 col-lg-2">.col-xs-6 .col-sm-4 .col-lg-2</div>
-      </div>
-    </div>
-
-    <div class="jumbotron">
-      <p><strong>Clear Floats</strong></p>
-      <p>Clear floats (with the <code>.clearfix</code> class) at specific breakpoints to prevent strange wrapping with uneven content:</p>
-      <div class="row">
-        <div class="col-xs-6 col-sm-3">
-          Column 1
-          <br> Resize the browser window to see the effect.
-        </div>
-        <div class="col-xs-6 col-sm-3">Column 2</div>
-        <!-- Add clearfix only for the required viewport -->
-        <div class="clearfix visible-xs"></div>
-        <div class="col-xs-6 col-sm-3">Column 3</div>
-        <div class="col-xs-6 col-sm-3">Column 4</div>
-      </div>
-    </div>
-
-    <div class="jumbotron">
-      <p><strong>Offsetting Columns</strong></p>
-      <p>Move columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by * columns:</p>
-      <div class="row">
-        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
-        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
-          .col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
-      </div>
-    </div>
-
-    <div class="jumbotron">
-      <p><strong>Push and Pull - Change Column Ordering</strong></p>
-      <p>Change the order of the grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> classes:</p>
-      <div class="row">
-        <div class="col-sm-4 col-sm-push-8">.col-sm-4 .col-sm-push-8</div>
-        <div class="col-sm-8 col-sm-pull-4">.col-sm-8 .col-sm-pull-4</div>
-      </div>
-    </div>
-
-    <hr>
-    <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong></p>
+    <br>
     <div class="row">
-      <div class="col-sm-12 col-md-4 col-md-push-4 text-center">
+      <div class="example2 col-md-4 text-center">.col-md-4</div>
+      <div class="example2 col-md-8 text-center">.col-md-8</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="example1 col-lg-4 text-center">.col-lg-4</div>
+      <div class="example2 col-lg-8 text-center">.col-lg-8</div>
+    </div>
+
+    <hr>
+    <p class="text-center"><strong>Two columns with two nested columns</strong></p>
+    <div class="row">
+      <div class="example3 col-sm-8">.col-sm-8
+        <div class="row">
+          <div class="example1 col-sm-6">.col-sm-6</div>
+          <div class="example2 col-sm-6">.col-sm-6</div>
+        </div>
+      </div>
+      <div class="example4 col-sm-4">.col-sm-4</div>
+    </div>
+
+    <hr>
+    <p class="text-center"><strong>12 column grid</strong></p>
+    <div class="row">
+      <div class="example1 col-sm-6 text-center">.col-sm-6</div>
+      <div class="example2 col-sm-6 text-center">.col-sm-6</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="example1 col-sm-4 text-center">.col-sm-4</div>
+      <div class="example2 col-sm-4 text-center">.col-sm-4</div>
+      <div class="example1 col-sm-4 text-center">.col-sm-4</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="example2 col-sm-3 text-center">.col-sm-3</div>
+      <div class="example1 col-sm-3 text-center">.col-sm-3</div>
+      <div class="example2 col-sm-3 text-center">.col-sm-3</div>
+      <div class="example1 col-sm-3 text-center">.col-sm-3</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="example2 col-sm-2 text-center">.col-sm-2</div>
+      <div class="example1 col-sm-2 text-center">.col-sm-2</div>
+      <div class="example2 col-sm-2 text-center">.col-sm-2</div>
+      <div class="example1 col-sm-2 text-center">.col-sm-2</div>
+      <div class="example2 col-sm-2 text-center">.col-sm-2</div>
+      <div class="example1 col-sm-2 text-center">.col-sm-2</div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="example2 col-sm-1 text-center">Content</div>
+      <div class="example1 col-sm-1 text-center">Content</div>
+      <div class="example2 col-sm-1 text-center">Content</div>
+      <div class="example1 col-sm-1 text-center">Content</div>
+      <div class="example2 col-sm-1 text-center">Content</div>
+      <div class="example1 col-sm-1 text-center">Content</div>
+      <div class="example2 col-sm-1 text-center">Content</div>
+      <div class="example1 col-sm-1 text-center">Content</div>
+      <div class="example2 col-sm-1 text-center">Content</div>
+      <div class="example1 col-sm-1 text-center">Content</div>
+      <div class="example2 col-sm-1 text-center">Content</div>
+      <div class="example1 col-sm-1 text-center">Content</div>
+    </div>
+
+    <hr>
+    <h3 class="text-center">Change Column Ordering</h3>
+    <p class="text-center">Columns don't have to simply stack in smaller devices. Change the order of the grid columns with <code>.order</code> classes. In v4 column ordering changed from using the <code>.push</code> and <code>.pull</code> classes to the using the <code>.order</code> class</p>
+    <h4 class="text-center">Write the code “Mobile First”</h4>
+    <p class="text-center">This means the HTML and CSS you first send to the browser are for mobile devices. So write the HTML markup in the order you want it to appear on mobile. Then use the <code>.order</code> classes to rearrange things on larger devices</p>
+    <br>
+    <p class="text-center"><strong>2 is pushed above 1 and 3 on small screens</strong><br>Mobile first. Ordering of columns is important in your code. Columns in this example are coded 2, 1, 3</p>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 order-md-2 text-center">
         <div class="alert alert-warning">
           <b>2</b>
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-4 col-md-pull-4 text-center">
+      <div class="col-sm-6 col-md-4 order-md-1 text-center">
         <div class="alert alert-info">
           <b>1</b>
         </div>
       </div>
-
-      <div class="col-sm-6 col-md-4 text-center">
+      <div class="col-sm-6 col-md-4 order-md-3 text-center">
         <div class="alert alert-danger">
           <b>3</b>
         </div>
@@ -169,56 +198,82 @@
     </div>
 
     <hr>
-    <p class="text-center"><strong>12 column grid</strong></p>
+    <p class="text-center"><strong>2 is pushed below 1 and 3 on small screens</strong> <br>Mobile first. Columns in this example are coded 1, 3, 2</p>
     <div class="row">
-      <div class="example1 col-md-6 text-center">.col-md-6</div>
-      <div class="example2 col-md-6 text-center">.col-md-6</div>
-    </div>
-
-    <br>
-    <div class="row">
-      <div class="example1 col-md-4 text-center">.col-md-4</div>
-      <div class="example2 col-md-4 text-center">.col-md-4</div>
-      <div class="example1 col-md-4 text-center">.col-md-4</div>
-    </div>
-
-    <br>
-    <div class="row">
-      <div class="example2 col-md-3 text-center">.col-md-3</div>
-      <div class="example1 col-md-3 text-center">.col-md-3</div>
-      <div class="example2 col-md-3 text-center">.col-md-3</div>
-      <div class="example1 col-md-3 text-center">.col-md-3</div>
-    </div>
-
-    <br>
-    <div class="row">
-      <div class="example2 col-md-2 text-center">.col-md-2</div>
-      <div class="example1 col-md-2 text-center">.col-md-2</div>
-      <div class="example2 col-md-2 text-center">.col-md-2</div>
-      <div class="example1 col-md-2 text-center">.col-md-2</div>
-      <div class="example2 col-md-2 text-center">.col-md-2</div>
-      <div class="example1 col-md-2 text-center">.col-md-2</div>
-    </div>
-
-    <br>
-    <div class="row">
-      <div class="example2 col-md-1 text-center">Content</div>
-      <div class="example1 col-md-1 text-center">Content</div>
-      <div class="example2 col-md-1 text-center">Content</div>
-      <div class="example1 col-md-1 text-center">Content</div>
-      <div class="example2 col-md-1 text-center">Content</div>
-      <div class="example1 col-md-1 text-center">Content</div>
-      <div class="example2 col-md-1 text-center">Content</div>
-      <div class="example1 col-md-1 text-center">Content</div>
-      <div class="example2 col-md-1 text-center">Content</div>
-      <div class="example1 col-md-1 text-center">Content</div>
-      <div class="example2 col-md-1 text-center">Content</div>
-      <div class="example1 col-md-1 text-center">Content</div>
+      <div class="col-sm-6 col-md-4 order-md-1 text-center">
+        <div class="alert alert-info">
+          <b>1</b>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 order-md-3 text-center">
+        <div class="alert alert-danger">
+          <b>3</b>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 order-md-2 text-center">
+        <div class="alert alert-warning">
+          <b>2</b>
+        </div>
+      </div>
     </div>
 
     <hr>
+    <p class="text-center"><strong>1 moves to the right as a sidebar on large screens</strong></p>
+    <div class="row">
+      <div class="col-sm-4 col-md-3 order-lg-2 text-center">
+        <div class="alert alert-danger">
+          <b>1</b>
+        </div>
+      </div>
+      <div class="col-sm-8 col-md-9 order-lg-1 text-center">
+        <div class="alert alert-warning">
+          <b>2</b>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <p class="text-center">Here is the grid classification (responsive breakpoints): (v4 Alpha 6)</p>
+    <table class="table table-bordered table-hover table-sm">
+      <thead class="thead-light" style="text-align: center;">
+        <tr>
+          <th scope="col">Device size</th>
+          <th scope="col">Pixels</th>
+          <th scope="col">Class</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Extra small</td>
+          <td>&lt;576px</td>
+          <td><code>.col-</code></td>
+        </tr>
+        <tr>
+          <td>Small</td>
+          <td>&ge;576px</td>
+          <td><code>.col-sm-</code></td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>&ge;768px</td>
+          <td><code>.col-md-</code></td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>&ge;992px</td>
+          <td><code>.col-lg-</code></td>
+        </tr>
+        <tr>
+          <td>Extra large</td>
+          <td>&ge;1200px</td>
+          <td><code>.col-xl-</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
     <footer>
-      <p><a class="btn btn-primary" href="bs337index.html" role="button">
+      <p><a class="btn btn-primary" href="bsBetaindex.html" role="button">
       <i class="fa fa-arrow-left"></i> Back</a></p>
     </footer>
   </div>
