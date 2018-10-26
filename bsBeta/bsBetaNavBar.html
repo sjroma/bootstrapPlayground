@@ -6,99 +6,116 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Bootstrap Nav Bar(beta)</title>
+  <title>Bootstrap Navbar(beta)</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
+  <style>
+    h3 {
+      color: cornflowerblue;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container text-center">
-    <h1 class="text-primary text-center">Bootstrap Navigation Bar <small class="text-muted"> 4.0.0-beta.2</small></h1>
+  <div class="container">
+    <h1 class="text-primary text-center">Bootstrap Navbar <small class="text-muted"> 4.0.0-beta.2</small></h1>
 
     <hr>
-    <p><strong>Basic navbar</strong></p>
-    <p>Bootstrap provides a set of classes in the Bootstrap framework to style your navbars. These classes are as follows:</p>
+    <h3 class="text-center">Basic navbar</h3>
+    <p class="text-center">Bootstrap classes for styling navbars changed with v4. Go to <a href="https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp" target="_blank">w3schools.com</a> to see more examples than I show here. <br>Some of the classes are:</p>
     <ul>
-      <li><code>.navbar navbar-default</code> The default style for your navbars.</li>
-      <li><code>.navbar navbar-inverse</code> Similar to the default style except the colors are inverted.</li>
+      <li><code>&lt;nav class="navbar navbar-expand-sm bg-light"&gt;</code> Like the default style in v3. W/out the <code>.navbar-expand-sm</code> class, the list items would be vertically stacked. Note: available classes are <code>navbar-expand-xl|lg|md|sm</code></li>
+      <li><code>&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;</code> Similar to v3's <code>.navbar-inverse</code> class.</li>
+      <li>Use any of the <code>.bg-color</code> classes to change the background color of the navbar (<code>.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light</code>) <br>Tip: Add white text color to all links in the navbar with the <code>.navbar-dark</code> class, or use the <code>.navbar-light</code> class to add black text color.</li>
     </ul>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Site Name</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <a class="navbar-brand" href="#">Light</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 3</a>
+          </li>
         </ul>
-      </div>
+    </nav>
+    <br>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Dark</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 3</a>
+          </li>
+        </ul>
+    </nav>
+    <br>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+      <a class="navbar-brand" href="#">Color</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='#'>Page 3</a>
+          </li>
+        </ul>
     </nav>
 
     <hr>
-    <p><strong>Add drop-down menus to the navbar</strong></p>
-    <p>You can include a drop down menu inside a navbar. This feature requires you to include Bootstrap’s Javascript file for it to work.</p>
-    <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Drop down
-    <span class="caret"></span>
-  </a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
+    <h3 class="text-center">Add drop-down menus to the navbar</h3>
+    <p class="text-center">You can include a drop down menu inside a navbar. Some changes have been made to the classes in v4.</p>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Dropdown</a>
+      <!-- Dropdown -->
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Dropdown link
+          </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+        </li>
       </ul>
-    </li>
-
-    <hr>
-    <p><strong>Add buttons to the navbar</strong></p>
-    <p>You can add buttons on the navbar. The existing Bootstrap Button classes work however you’ll need to include the class <code>.navbar-btn</code> to the end of the class list.</p>
-    <button class="btn navbar-btn">Button</button>
-
-    <hr>
-    <p><strong>Add forms to the navbar</strong></p>
-    <p>You can also add forms to the navbar. This could be used for tasks such as a search field, quick login field, etc.</p>
-    <form class="navbar-form navbar-right">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Search</button>
-    </form>
-
-    <hr>
-    <p><strong>Align elements to the right on the navbar</strong></p>
-    <p>In some cases you might want to align elements in a navbar to the right (for example a login or sign-up button.). To do this you’ll need to use the <code>.navbar-right</code> class.</p>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Site Name</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Action Link #1</a></li>
-          <li><a href="#">Action Link #2</a></li>
-        </ul>
-      </div>
     </nav>
 
     <hr>
-    <p>The following was blatantly plagiarized from <a href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap's documention</a>. I need to figure out why this looks correct and what I've done above doesn't.</p>
-    <p>Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:</p>
-    <ul>
-      <li><code>.navbar-brand</code> for your company, product, or project name</li>
-      <li><code>.navbar-nav</code> for a full-height and lightweight navigation (including support for dropdowns)</li>
-      <li><code>.navbar-toggler</code> for use with our collapse plugin and other navigation toggling behaviors</li>
-      <li><code>.form-inline</code> for any form controls and actions</li>
-      <li><code>.navbar-text</code> for adding vertically centered strings of text</li>
-      <li><code>.collapse.navbar-collapse</code> for grouping and hiding navbar contents by a parent breakpoint</li>
-    </ul>
-    <p>Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code>lg</code> (large) breakpoint.</p>
+    <h3 class="text-center">Add forms and buttons to the navbar</h3>
+    <p class="text-center">You can also add forms to the navbar. This could be used for tasks such as a search field, quick login field, etc.</p>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <hr>
+    <p class="text-center">Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code>lg</code> (large) breakpoint.</p>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,20 +145,23 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
         </form>
       </div>
     </nav>
-    <a class="btn btn-primary" href="bsBetaindex.html" role="button">Back</a>
-    <p></p>
-  </div>
+    <br>
+
+    <footer>
+      <p><a class="btn btn-primary" href="bsBetaindex.html" role="button">
+      <i class="fa fa-arrow-left"></i> Back</a></p>
+    </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+  </div>
 </body>
 
 </html>
