@@ -6,7 +6,7 @@ body {
 	background-color: lightgrey;
 }
 
-/*highlights the selected page in the NavBar*/
+/* highlights the selected page in the NavBar */
 .active-page {
 	background-color: #d3f2fd;
 }
@@ -24,7 +24,7 @@ body {
 	font-size: 11px;
 }
 
-/*allow text to wrap around the image on the profile.html page*/
+/* allow text to wrap around the image on the loremZombie.html and profile.html pages */
 .image {
   float: left;
   height: 200px;
@@ -32,6 +32,7 @@ body {
   vertical-align: top;
 }
 
+/* increase Bootstrap 3.3.7 default font size */
 .fontGrow {
   font-size: 16px;
 }
@@ -40,7 +41,7 @@ th {
   text-align: center;
 }
 
-/*center text in the table on the bs337Grid.html page*/
+/* center text in the table on the bs337Grid.html page */
 .is-hidden {
   text-align: center;
 }
