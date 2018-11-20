@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Template</title>
+  <title>Bootstrap Jumbotron</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,21 +15,45 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <style>
+    h2 {
+      background-color: lawngreen;
+    }
 
+    .container {
+      background-color: green;
+    }
+
+    .jumbotron {
+      background-color: lightgreen;
+    }
 
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <h1 class="text-primary text-center">Bootstrap Jumbotron</h1>
+  <h4 class="text-primary text-center">v3.3.7</h4>
+  <p class="text-center">I need to learn more about when and why one would choose to use the <code>.jumbotron</code> class</p>
 
-    <footer>
+  <div class="jumbotron">
+    <h2>Hello, jumbotron!</h2>
+    <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h2>Hello, jumbotron!</h2>
+      <p>To make the jumbotron full width, and without rounded corners, place it outside all <code>.containers</code> and instead add a <code>.container</code> class within.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </div>
+  
+  <footer>
       <hr>
       <p><a class="btn btn-primary" href="bs337Index.html" role="button">
       <i class="fa fa-arrow-left"></i> Back</a></p>
     </footer>
-
-  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

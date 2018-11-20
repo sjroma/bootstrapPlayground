@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Template</title>
+  <title>Bootstrap Jumbotron (beta)</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -15,20 +15,48 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <style>
+    h2 {
+      background-color: lawngreen;
+    }
 
+    .container {
+      background-color: green;
+    }
+
+    .jumbotron {
+      background-color: lightgreen;
+    }
 
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <h1 class="text-primary text-center">Bootstrap Jumbotron</h1>
+  <h4 class="text-primary text-center">v4.0.0-beta.2</h4>
+  <p class="text-center">I need to learn more about when and why one would choose to use the <code>.jumbotron</code> class</p>
 
-    <footer>
+  <div class="jumbotron">
+    <h2 class="display-4">Hello, jumbotron!</h2>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 class="display-4">Fluid jumbotron</h2>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+  
+  <footer>
       <hr>
       <p><a class="btn btn-primary" href="bsBetaindex.html" role="button">
       <i class="fa fa-arrow-left"></i> Back</a></p>
     </footer>
-  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
