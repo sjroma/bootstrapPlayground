@@ -10,11 +10,16 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  
+
   <style>
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+    }
+
     h3 {
       color: cornflowerblue;
     }
+
   </style>
 </head>
 
@@ -26,62 +31,69 @@
     <h3 class="text-center">Basic navbar</h3>
     <p class="text-center">Bootstrap classes for styling navbars changed with v4. Go to <a href="https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp" target="_blank">w3schools.com</a> to see more examples than I show here. <br>Some of the classes are:</p>
     <ul>
-      <li><code>&lt;nav class="navbar navbar-expand-sm bg-light"&gt;</code> Like the default style in v3. W/out the <code>.navbar-expand-sm</code> class, the list items would be vertically stacked. Note: available classes are <code>navbar-expand-xl|lg|md|sm</code></li>
+      <li><code>&lt;nav class="navbar navbar-expand-sm bg-light navbar-light"&gt;</code> Similar to v3's <code>.navbar-default</code> class. W/out the <code>.navbar-expand-sm</code> class, the list items would be vertically stacked.</li>
+      <ul>
+        <li>Available classes are <code>navbar-expand-xl|lg|md|sm</code></li>
+      </ul>
       <li><code>&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;</code> Similar to v3's <code>.navbar-inverse</code> class.</li>
-      <li>Use any of the <code>.bg-color</code> classes to change the background color of the navbar (<code>.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light</code>) <br>Tip: Add white text color to all links in the navbar with the <code>.navbar-dark</code> class, or use the <code>.navbar-light</code> class to add black text color.</li>
+      <li><code>&lt;nav class="navbar navbar-expand-sm bg-primary navbar-light"&gt;</code></li>
+      <ul>
+        <li>Use any of the <code>.bg-color</code> classes to change the background color of the navbar (<code>.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light</code>)</li>
+        <li>Add white text color to all links in the navbar with the <code>.navbar-dark</code> class, or use the <code>.navbar-light</code> class to add black text color.</li>
+      </ul>
     </ul>
-    <nav class="navbar navbar-expand-sm bg-light">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
       <a class="navbar-brand" href="#">Light</a>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 3</a>
-          </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 3</a>
+        </li>
+      </ul>
     </nav>
     <br>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="navbar-brand" href="#">Dark</a>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 3</a>
-          </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 3</a>
+        </li>
+      </ul>
     </nav>
     <br>
     <nav class="navbar navbar-expand-sm bg-primary navbar-light">
       <a class="navbar-brand" href="#">Color</a>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href='#'>Page 3</a>
-          </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='#'>Page 3</a>
+        </li>
+      </ul>
     </nav>
 
     <hr>
@@ -95,11 +107,11 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           Dropdown link
           </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Link 1</a>
-          <a class="dropdown-item" href="#">Link 2</a>
-          <a class="dropdown-item" href="#">Link 3</a>
-        </div>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -118,7 +130,7 @@
     <p class="text-center">Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code>lg</code> (large) breakpoint.</p>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -149,7 +161,6 @@
         </form>
       </div>
     </nav>
-    <br>
 
     <footer>
       <hr>
@@ -157,11 +168,11 @@
       <i class="fa fa-arrow-left"></i> Back</a></p>
     </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </div>
 </body>
 
