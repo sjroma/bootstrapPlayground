@@ -15,18 +15,24 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <style>
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+    }
+
     table,
     th,
     td {
       border: 1px solid black;
     }
 
+    .table-sm {
+      font-size: 11px;
+    }
+
   </style>
-  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-  <!--  <div class="jumbotron">-->
   <div class="container">
     <h1 class="text-primary text-center">Bootstrap Tables</h1>
     <h4 class="text-muted text-center">Bootstrap v4.0.0-beta.2</h4>
@@ -170,12 +176,8 @@
         </tr>
       </tbody>
     </table>
-  </div>
-  <!--  </div>-->
 
-  <hr>
-  <!--  <div class="jumbotron text-center">-->
-  <div class="container">
+    <hr>
     <p>The following table was taken from <a href="https://mdn.github.io/learning-area/html/tables/assessment-finished/planets-data.html" target="_blank">GitHub</a>. It's a basic bootstrap table, all that was added was the <code>.table</code> class.</p>
     <table class="table">
       <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric)</a>.</caption>
@@ -314,13 +316,9 @@
         </tr>
       </tbody>
     </table>
-  </div>
-  <!--  </div>-->
 
-  <hr>
-  <!--  <div class="jumbotron text-center">-->
-  <div class="container">
-    <p>The following table was taken from <a href="https://mdn.github.io/learning-area/html/tables/assessment-finished/planets-data.html" target="_blank">GitHub</a>. Basic bootstrap table with the <code>.table-striped</code>, <code>.table-bordered</code> and <code>.table-sm</code>classes. <br>Reduced font size in style.css so the table would better fit the page.</p>
+    <hr>
+    <p>The following table was taken from <a href="https://mdn.github.io/learning-area/html/tables/assessment-finished/planets-data.html" target="_blank">GitHub</a>. Basic bootstrap table with the <code>.table-striped</code>, <code>.table-bordered</code> and <code>.table-sm</code>classes. <br>Reduced font size in style so the table would better fit the page.</p>
     <table class="table table-sm table-striped table-bordered">
       <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric)</a>.</caption>
       <colgroup>
@@ -458,20 +456,19 @@
         </tr>
       </tbody>
     </table>
-  </div>
-  <!--  </div>-->
-  
-  <footer>
+
+    <footer>
       <hr>
       <p><a class="btn btn-primary" href="bsBetaindex.html" role="button">
       <i class="fa fa-arrow-left"></i> Back</a></p>
     </footer>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>
