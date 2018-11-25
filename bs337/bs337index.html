@@ -25,16 +25,25 @@
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
       <div class="navbar-header">
+        <!-- collapse button (for hamburger menu on small screens) -->
+        <!-- styled because button and icon-bar did not show on navbar-light -->
+        <button type="button" class="navbar-toggle" style="background-color: #d3e2ed;" data-toggle="collapse" data-target="#lightNavbar">
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>                       
+        </button>
         <a class="navbar-brand" href="../index.html">BootStrap Playground</a>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="home"><a href="../index.html">Home</a></li>
-        <li><a href="../gitCheatSheet.html">Git Cheat Sheet</a></li>
-        <li><a href="../loremPirate.html">Lorem Tabs</a></li>
-        <li class="active-page"><a href="#">Bootstrap 3.3.7</a></li>
-        <li><a href="../bsBeta/bsBetaindex.html">Bootstrap Beta</a></li>
-        <li class="disabled"><a href="#">Disabled</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="lightNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="home"><a href="../index.html">Home</a></li>
+          <li><a href="../gitCheatSheet.html">Git Cheat Sheet</a></li>
+          <li><a href="../loremPirate.html">Lorem Tabs</a></li>
+          <li class="active-page"><a href="#">Bootstrap 3.3.7</a></li>
+          <li><a href="../bsBeta/bsBetaindex.html">Bootstrap Beta</a></li>
+          <li class="disabled"><a href="#">Disabled</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
