@@ -27,7 +27,7 @@ body {
 /* allow text to wrap around the image on the loremZombie.html and profile.html pages */
 .image {
   float: left;
-  height: 200px;
+  height: 100px;
   margin-right: 10px;
   vertical-align: top;
 }
