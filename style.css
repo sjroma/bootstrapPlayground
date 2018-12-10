@@ -24,9 +24,10 @@ body {
 	font-size: 11px;
 }
 
-/* allow text to wrap around the image on the loremZombie.html and profile.html pages */
 .image {
-  float: left;
+  border-radius: 15px; /* add a bit of style to the images */
+  box-shadow: 5px 5px 10px #aaa;
+  float: left; /* allow text to wrap around the image on the loremZombie.html and profile.html pages */
   height: 100px;
   margin-right: 10px;
   vertical-align: top;
