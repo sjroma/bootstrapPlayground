@@ -21,7 +21,7 @@ I don't have a Windoze box handy but I may put these pages on a flash drive so I
 ### To-do
 - [x] Add code snippets to the pages so I don't have to continuously view the page source to see what I did to create the particular Bootstrap sample being displayed.
 - [x] Decide which .container class to use:
-- &nbsp; [ ]<code>.container</code> provides a responsive fixed width container
-- &nbsp; [x]<code>.container-fluid</code> provides a full width container which spans the entire width of the viewport
+&nbsp; - [ ]<code>.container</code> provides a responsive fixed width container
+&nbsp; - [x]<code>.container-fluid</code> provides a full width container which spans the entire width of the viewport
 - [ ] There's an accordian page in root that uses HTML and JavaScript.  Recreate with Bootstrap.  (Google is my friend.)
 - [ ] Update beta example pages with the latest stable v4 release
