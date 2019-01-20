@@ -26,3 +26,5 @@ I don't have a Windoze box handy but I may put these pages on a flash drive so I
   - [x] <code>.container-fluid</code> provides a full width container which spans the entire width of the viewport
 - [ ] There's an accordian page in root that uses HTML and JavaScript.  Recreate with Bootstrap.  (Google is my friend.)
 - [ ] Update beta example pages with the latest stable v4 release
+
+##### ~/freeCodeCamp/bootstrapPlayground
