@@ -40,7 +40,6 @@
       </div>
       <div class="collapse navbar-collapse" id="lightNavbar">
         <ul class="nav navbar-nav navbar-right">
-<!--          <li><a href="index.html">Home</a></li>-->
           <li class="active-page"><a href="gitCheatSheet.html">Git Cheat Sheet</a></li>
           <li><a href="../ipsum/ipsumPirate.html">Ipsum Tabs</a></li>
           <li><a href="../bs337/bs337index.html">Bootstrap 3.3.7</a></li>
@@ -142,10 +141,27 @@
         </tbody>
       </table>
     </div>
-    <p><sup class="asterisk">*</sup>This table blatantly plagiarized from <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">git-tower.com</a>. Visit their site to learn about their Git client and to sign up for this and five other cheat sheets. <br>This was done as an exercise in making a Bootstrap table and was created with the <code>.table-condensed</code>, <code>.table-striped</code> and  <code>.table-bordered</code> classes.</p>
+    <p><sup class="asterisk">*</sup>This table was blatantly plagiarized from <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">git-tower.com</a>. Visit their site to learn about their Git client and sign up for this, and five other cheat sheets. <br>This was done as an exercise in making a Bootstrap table and was created with the <code>.table-condensed</code>, <code>.table-striped</code> and <code>.table-bordered</code> classes.</p>
+    
+    <p>On a typical day I use a small subset of these commands. After cloning a repo, or creating a new git repo, the first thing to do is create a branch to work in, <code>git checkout -b <i>branch_name</i> master</code>. A brief run down to push code to the master branch after completing a new feature in the branch;</p>
+    <dl class="row">
+      <dt class="col-sm-3">git status</dt>
+      <dd class="col-sm-9">list the changed file(s)</dd>
+      <dt class="col-sm-3">git add</dt>
+      <dd class="col-sm-9">add the current changes to the next commit</dd>
+      <dt class="col-sm-3">git commit -m ''</dt>
+      <dd class="col-sm-9">commit the local change(s) and add a message about what was done between the quotes</dd>
+      <dt class="col-sm-3">git push</dt>
+      <dd class="col-sm-9">push the changes from <i>branch_name</i> to the local master branch</dd>
+      <dt class="col-sm-3">git checkout master</dt>
+      <dd class="col-sm-9">switch to the local master branch</dd>
+      <dt class="col-sm-3">git merge <i>branch_name</i></dt>
+      <dd class="col-sm-9">merge the changed code into the local master branch</dd>
+      <dt class="col-sm-3">git push</dt>
+      <dd class="col-sm-9">push the local master branch to the remote master repo</dd>
+    </dl>
   </div>
-  <!-- /container -->
-
+  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
