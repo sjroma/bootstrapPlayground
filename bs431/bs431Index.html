@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap v4.3.1</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <style>
+    ul {
+      margin: 10px;
+      padding: 0px;
+    }
+
+  </style>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- collapse button (for hamburger menu on small screens) -->
+        <!-- styled because button and icon-bar did not show on navbar-light -->
+        <button type="button" class="navbar-toggle" style="background-color: #d3e2ed;" data-toggle="collapse" data-target="#lightNavbar">
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>                       
+        </button>
+        <a class="navbar-brand" href="../index.html">BootStrap Playground</a>
+      </div>
+      <div class="collapse navbar-collapse" id="lightNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../git/gitCheatSheet.html">Git Cheat Sheet</a></li>
+          <li><a href="../ipsum/ipsumPirate.html">Ipsum Tabs</a></li>
+          <li><a href="../bs337/bs337index.html">Bootstrap 3.3.7</a></li>
+          <li class="active-page"><a href="bs431index.html">Bootstrap 4.3.1</a></li>
+          <li class="disabled"><a href="#">Disabled</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <h1 class="text-primary text-center">Bootstrap Beta 4.3.1</h1>
+    <div class="fontGrow">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div id="heading1">
+            <h2>General Info</h2>
+            <p>Because I want these pages to be portable, neither Bootstrap nor Font Awesome has been installed on my box. Each of the pages has a <abbr title="Content Delivery Network">CDN</abbr> call to Bootstrap and, if required, Font Awesome.</p>
+            <p><a href="https://www.w3schools.com" target="_blank">w3schools.com</a> has an excellent <a href="https://www.w3schools.com/bootstrap4/" target="_blank">Bootstrap 4 Tutorial</a>.</p>
+            <p>This page has been styled with Bootstrap v3.3.7 to keep the flow in the navbar smooth. The changes to the navbar and other elements in Bootstrap Beta are noticable. A link to this <a href="bs431IndexV4.html" target="_blank">same page styled with v4.3.1</a> is provided so the differences can be compared. <br>When sites migrate to v4 they will do all pages before pushing to production and end users will only see updated pages. They will not see pages with mismatched styles.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div id="heading2">
+            <h2>Pages created with Bootstrap 4.3.1</h2>
+            <ul class="list-unstyled">
+              <li><a href="bs431Buttons.html">Buttons</a></li>
+              <li><a href="bs431Forms.html">Forms</a></li>
+              <li><a href="bs431Grid.html">Grid</a></li>
+              <li><a href="bs431Navbar.html">Navbar</a></li>
+              <li><a href="bs431Tables.html">Tables</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
