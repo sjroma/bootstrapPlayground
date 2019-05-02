@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700');
+
 body {
-  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .active {
 	background-color: lightgrey;
 }
 
-/* highlights the selected page in the NavBar */
+/* highlights the selected page in the navbar */
 .active-page {
 	background-color: #d3f2fd;
 }
