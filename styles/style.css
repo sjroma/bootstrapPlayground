@@ -55,6 +55,15 @@ th {
   text-align: center;
 }
 
+.table-hide {
+  border-collapse: separate; /*default of collapse overwrites the empty-cells*/
+  empty-cells: hide;
+}
+
+.table-hide th, .table-hide td {
+  border-radius: 5px;
+} 
+
 h3 {
   color: cornflowerblue;
 }
