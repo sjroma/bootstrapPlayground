@@ -14,7 +14,8 @@
   <style>
     body {
       background-color: #e3f2fd;
-      padding-top: 80px; /* otherwise fixed navbar overlays the body content */
+      padding-top: 80px;
+      /* otherwise fixed navbar overlays the body content */
     }
 
     th {
@@ -32,10 +33,10 @@
         <!-- collapse button (for hamburger menu on small screens) -->
         <!-- styled because button and icon-bar did not show on navbar-light -->
         <button type="button" class="navbar-toggle" style="background-color: #d3e2ed;" data-toggle="collapse" data-target="#lightNavbar">
-                <span class="icon-bar" style="background-color: #aaa;"></span>
-                <span class="icon-bar" style="background-color: #aaa;"></span>
-                <span class="icon-bar" style="background-color: #aaa;"></span>                       
-              </button>
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+          <span class="icon-bar" style="background-color: #aaa;"></span>
+        </button>
         <a class="navbar-brand" href="../index.html">BootStrap Playground</a>
       </div>
       <div class="collapse navbar-collapse" id="lightNavbar">
@@ -53,7 +54,7 @@
   <div class="container-fluid">
     <h1 class="text-primary text-center">Git Cheat Sheet<sup>*</sup></h1>
     <div class="table-responsive">
-      <table class="table table-hide table-condensed table-striped">
+      <table class="table table-hide table-condensed table-striped table-bordered">
         <thead>
           <tr>
             <th>CREATE</th>
@@ -142,7 +143,7 @@
       </table>
     </div>
     <p><sup class="asterisk">*</sup>The content for this table was blatantly plagiarized from <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">git-tower.com</a>. Visit their site to learn about their Git client and sign up for this, and five other cheat sheets. <br>This was done as an exercise in making a Bootstrap table and was created with the <code>.table-condensed</code>, <code>.table-striped</code> and <code>.table-bordered</code> classes.</p>
-    
+
     <p>On a typical day I use a small subset of these commands. After cloning a repo, or creating a new git repo, the first thing to do is create a branch to work in, <code>git checkout -b <i>branch_name</i> master</code>. A brief run down to push code to the master branch after completing a new feature in the branch;</p>
     <dl class="row">
       <dt class="col-sm-3">git status</dt>
@@ -161,7 +162,7 @@
       <dd class="col-sm-9">pushes the local master branch to the remote master repo</dd>
     </dl>
   </div>
-  
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
