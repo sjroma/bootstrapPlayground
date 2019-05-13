@@ -36,6 +36,13 @@ body {
   border-radius: 5px;
 }
 
+/*by default this adds border around table and fills in bottom of each cell
+setting 0px removes border around table but keeps the bottom cell border*/
+/*not using the .table-bordered class removes border from table and border from bottom of cells*/
+.table-bordered {
+  border: 0px solid #ddd;
+}
+
 .image {
   border-radius: 15px; /* add a bit of style to the images */
   box-shadow: 5px 5px 10px #aaa;
