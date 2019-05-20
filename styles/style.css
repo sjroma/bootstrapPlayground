@@ -75,3 +75,12 @@ th {
 h3 {
   color: cornflowerblue;
 }
+
+pre {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  display: block;
+  font-family: monospace;
+  margin: 10px;
+  width: 68vw;
+}
