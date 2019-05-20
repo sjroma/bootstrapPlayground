@@ -142,9 +142,23 @@
         </tbody>
       </table>
     </div>
-    <p><sup class="asterisk">*</sup>The content for this table was blatantly plagiarized from <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">git-tower.com</a>. Visit their site to learn about their Git client and sign up for this, and five other cheat sheets. <br>This was done as an exercise in making a Bootstrap table and was created with the <code>.table-condensed</code>, <code>.table-striped</code> and <code>.table-bordered</code> classes.</p>
+    <p><sup class="asterisk">*</sup>The content for this table was blatantly plagiarized from <a href="https://www.git-tower.com/blog/git-cheat-sheet" target="_blank">git-tower.com</a>. Visit their site to learn about their Git client and sign up for this, and five other cheat sheets.</p>
+    <p>This was done as an exercise in making a Bootstrap table and was created with the<code>.table-condensed</code>,<code>.table-striped</code>,<code>.table-bordered</code>and<code>.table-hide</code> classes.</p>
+    <p>The first three classes mentioned are used most often. I wanted to further enhance the look of the table and hide the empty cells. For this, I used the<code>.table-hide</code>class. In order to hide the cells properly further styling must be done in CSS. First, the<code>border-collapse</code>must be changed from the default of<code>collapse</code>to<code>separate</code>and<code>empty-cells</code>set to<code>hide</code>. (Read more about the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse" target="_blank">border-collapse command</a> on MDN.) The<code>.table-bordered</code>class also had to be changed in CSS. The default of 1px is changed to 0px so the outer border is hidden.</p>
+    <p>CSS looks like this;</p>
+    <pre><code>
+.table-hide {
+  border-collapse: separate;
+  empty-cells: hide;
+}
 
-    <p>On a typical day I use a small subset of these commands. After cloning a repo, or creating a new git repo, the first thing to do is create a branch to work in, <code>git checkout -b <i>branch_name</i> master</code>. A brief run down to push code to the master branch after completing a new feature in the branch;</p>
+.table-bordered {
+  border: 0px solid #ddd;
+}
+    </code></pre>
+    
+    <h2 class="text-primary text-center">My typical day-to-day GitHub commands</h2>
+    <p>On a typical day I use a small subset of these commands. After cloning a repo, or creating a new git repo, the first thing to do is create a branch to work in,<code>git checkout -b <i>branch_name</i>master</code>. A brief run down to push code to the master branch after completing a new feature in the branch;</p>
     <dl class="row">
       <dt class="col-sm-3">git status</dt>
       <dd class="col-sm-9">lists the changed file(s)</dd>
