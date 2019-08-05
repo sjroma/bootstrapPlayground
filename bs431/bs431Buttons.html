@@ -71,23 +71,37 @@
     <p class="text-center">Use the <code>.fa class</code> to add font awesome icons to your buttons. <br>For example; <code>&lt;i class="fa fa-thumbs-up"&gt;&lt;/i&gt;</code></p>
     <div class="text-center">
       <button class="btn btn-primary">
-        <i class="fa fa-thumbs-up"></i> Like
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i> Like
       </button>
       <button class="btn btn-info">
-        <i class="fa fa-info-circle"></i> Info
+        <i class="fa fa-info-circle" aria-hidden="true"></i> Info
       </button>
       <button class="btn btn-danger">
-        <i class="fa fa-trash"></i> Delete
+        <i class="fa fa-trash" aria-hidden="true"></i> Delete
       </button>
       <button class="btn btn-primary">
-        <i class="fa fa-paper-plane"></i> Submit
+        <i class="fa fa-paper-plane" aria-hidden="true"></i> Submit
       </button>
       <button class="btn btn-primary">
-        <i class="fa fa-print"></i> Print
+        <i class="fa fa-print" aria-hidden="true"></i> Print
       </button>
       <button class="btn btn-outline-dark">
-        <i class="fa fa-search"></i> Search
+        <i class="fa fa-search" aria-hidden="true"></i> Search
       </button>
+    </div>
+
+    <hr>
+    <h3 class="text-center">Dropdown button</h3>
+    <p class="text-center">For example <code>&lt;button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"&gt;</code></p>
+    <div class="dropdown text-center">
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action 1</a>
+        <a class="dropdown-item" href="#">Action 2</a>
+        <a class="dropdown-item" href="#">Action 3</a>
+      </div>
     </div>
 
     <hr>
