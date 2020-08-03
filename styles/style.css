@@ -23,6 +23,7 @@ body {
   color: darkgrey;
 }
 
+/* specific for Git cheat sheet table */
 .table-condensed, .table-sm {
 	font-size: 11px;
 }
@@ -36,12 +37,19 @@ body {
   border-radius: 5px;
 }
 
-/*by default this adds border around table and fills in bottom of each cell
-setting 0px removes border around table but keeps the bottom cell border*/
-/*not using the .table-bordered class removes border from table and border from bottom of cells*/
+.cell-lineBreak {
+  white-space: pre-line;
+}
+
+/*
+by default the border property adds a border around the table and fills in bottom of each cell
+setting a value of 0px removes the border around the table but keeps the bottom cell border
+not using the .table-bordered class removes border from table and border from bottom of cells
+*/
 .table-bordered {
   border: 0px solid #ddd;
 }
+/* end specific for Git cheat sheet table */
 
 .image {
   border-radius: 15px; /* add a bit of style to the images */
